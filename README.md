@@ -4,6 +4,14 @@
 
 本项目用于托管 [LeviDing 的博客](https://dingxuewen.com/)，博客源码托管在 [source 分支](https://github.com/leviding/leviding.github.io/tree/source)，当 [Travis CI](https://www.travis-ci.org) 监测到 [source 分支](https://github.com/leviding/leviding.github.io/tree/source)的变化时，自动将博客部署到 [master 分支](https://github.com/leviding/leviding.github.io/tree/master)。
 
+<!--
+**参考文章：**
+
+> - [Github & Travis CI & Hexo 实现博客自动部署](https://michael728.github.io/2019/06/16/cicd-hexo-blog-travis/)
+> - [Hexo 遇上 Travis-CI](https://juejin.im/post/5a1fa30c6fb9a045263b5d2a)
+> - [SEO 优化](https://hoxis.github.io/Hexo+Next%20SEO%E4%BC%98%E5%8C%96.html)
+-->
+
 
 ## 本地阅读和开发
 
@@ -59,7 +67,7 @@ $ yarn g
 
 ## Contact Me
 
-- Mail: [imdingxuewen@gmail.com](mailto:imdingxuewen@gmail.com)
+Mail: [imdingxuewen@gmail.com](mailto:imdingxuewen@gmail.com)
 
 ---
 
