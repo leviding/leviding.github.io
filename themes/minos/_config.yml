@@ -1,0 +1,73 @@
+# Website's icon url.
+favicon: /favicon.ico
+
+# Open Graph metadata (https://hexo.io/docs/helpers.html#open-graph)
+open_graph:
+  twitter_id:
+  twitter_site:
+  google_plus:
+  fb_admins:
+  fb_app_id:
+
+# Website's logo shown on the left of the navigation bar.
+# It can either be an url to an image or a string if the following option is set.
+# logo:
+#   text: <logo string>
+logo: /images/logo.png
+#  text: Levi's Blog
+
+article:
+  # Show word count and estimated reading time.
+  readtime: true
+  # Code highlight theme, please see https://highlightjs.org/static/demo/
+  highlight: atom-one-light
+
+# Navigation bar menu links.
+menu:
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+  随想: /tags/随想
+  关于: /about
+
+# Search plugin settings.
+search:
+  type: insight
+
+# Navigation bar toc settings
+toc: true
+
+# Share plugin settings.
+#share:
+#  type: sharethis
+#  install_url: //platform-api.sharethis.com/js/sharethis.js#property=5c96fa05fbd80b0011b66397&product=custom-share-buttons
+
+# Comment plugin settings.
+#comment:
+#  type: disqus
+#  shortname: dingxuewen
+
+# Other plugins and their settings.
+plugins:
+  mathjax: true
+  katex: false
+  gallery: true
+  clipboard: true
+  google-analytics:
+    tracking_id:
+
+# Additional navigation bar links on the right.
+# Links can either be text or icon. The following link is set to be an icon link whose icon
+# is set to the class name of a FontAwesome 5 icon. The `footer_links` below also gives an
+# example of setting plain text links.
+navbar_links:
+  GitHub:
+    icon: fab fa-github
+    url: https://github.com/leviding
+
+# Links at the bottom of the page.
+footer_links:
+  GitHub: https://github.com/leviding
+  JueJin: https://juejin.im/user/589881b7128fe1006cbbacec/posts
+  ZhiHu: https://www.zhihu.com/people/leviding

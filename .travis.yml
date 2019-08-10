@@ -1,0 +1,52 @@
+# 指定构建环境是 Node.js，当前版本是稳定版
+anguage: node_js
+node_js: stable
+
+env:
+ global:
+   - URL_REPO: github.com/leviding/leviding.github.io.git
+
+# 设置钩子只检测 source 分支的 push 变动
+branches:
+  only:
+    - source
+
+# 设置缓存文件
+cache:
+  directories:
+    - node_modules
+  yarn: true
+
+# 在构建之前安装 hexo 环境
+before_install:
+  - npm install -g hexo-cli
+
+# 安装依赖
+install:
+  - yarn
+
+# 设置git提交名，邮箱；替换真实token到_config.yml文件
+before_script:
+  - git config user.name "leviding"
+  - git config user.email "xuewending1995@gmail.com"
+  # 替换同目录下的 _config.yml 文件中 github_token 字符串为 travis 后台配置的变量，注意此处 sed 命令用了双引号。单引号无效！
+  - sed -i "s/github_token/${GITHUB_TOKEN}/g" ./_config.yml
+  - sed -i "s/baidu_token/${BAIDU_URL_SUBMIT_TOKEN}/g" ./_config.yml
+
+# 执行清缓存，生成网页操作
+script:
+  - hexo clean
+  - hexo generate
+  - hexo douban -b
+  - hexo douban -m
+  - echo ${ENV_TEST}
+  - hexo deploy
+
+# configure notifications (email, IRC, campfire etc)
+# please update this section to your needs!
+# https://docs.travis-ci.com/user/notifications/
+notifications:
+  email:
+    - 517010193@qq.com
+  on_success: change
+  on_failure: always

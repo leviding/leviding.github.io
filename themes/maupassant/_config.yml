@@ -1,0 +1,150 @@
+disqus: dingxuewen
+uyan: ## Your uyan_id. e.g. 1234567
+livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
+changyan: ## Your changyan appid, e.g. cyrALsXc8
+changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
+gitment:
+  enable: false ## If you want to use Gitment comment system please set the value to true.
+  owner: ## Your GitHub ID, e.g. username
+  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+gitalk:
+  enable: false ## If you want to use Gitment comment system please set the value to true.
+  owner:  ## Your GitHub ID, e.g. username
+  repo:  ## The repository to store your comments, make sure you're the repo's owner, e.g. gitalk.github.io
+  client_id:  ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret:  ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+  admin:  ## Github repo owner and collaborators, only these guys can initialize github issues.
+valine: ## https://valine.js.org
+  enable: false ## If you want to use Valine comment system, please set the value to true.
+  appid: ## Your LeanCloud application App ID, e.g. pRBBL2JR4N7kLEGojrF0MsSs-gzGzoHsz
+  appkey: ## Your LeanCloud application App Key, e.g. tjczHpDfhjYDSYddzymYK1JJ
+  notify: false ## Mail notifier, see https://github.com/xCss/Valine/wiki/Valine-评论系统中的邮件提醒设置
+  verify: true ## Validation code.
+  placeholder: Just so so ## Comment box placeholders.
+  avatar: 'mm' ## Gravatar type, see https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
+  pageSize: 10 ## Number of comments per page.
+  guest_info: nick,mail,link ## Attributes of reviewers.
+
+google_search: true ## Use Google search, true/false.
+baidu_search: false ## Use Baidu search, true/false.
+swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
+tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
+self_search: false ## Use a jQuery-based local search engine, true/false.
+google_analytics: UA-92630037-1 ## Your Google Analytics tracking id, e.g. UA-42425684-2
+baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+fancybox: true ## If you want to use fancybox please set the value to true.
+show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
+toc_number: true ## If you want to add list number to toc please set the value to true.
+shareto: false ## If you want to use the share button please set the value to true, and you must have hexo-helper-qrcode installed.
+busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
+wordcount: true ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
+widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
+canvas_nest:
+  enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
+  color: ## RGB value of the color, e.g. "100,99,98"
+  opacity: ## Transparency of lines, e.g. "0.7"
+  zIndex: ## The z-index property of the background, e.g. "-1"
+  count: ## Quantity of lines, e.g. "150"
+donate:
+  enable: true ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
+  alipay_qr: /img/alipay.jpg ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+  wechat_qr: /img/wechatpay.jpg ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
+  btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
+  paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
+post_copyright:
+  enable: true ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
+  author: LeviDing ## Your author name, e.g. tufu9441
+  copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
+
+menu:
+  - page: home
+    directory: .
+    icon: fa-home
+  - page: archive
+    directory: archives/
+    icon: fa-archive
+  - page: about
+    directory: about/
+    icon: fa-user
+  - page: history
+    directory: history/
+    icon: fa-history
+  - page: books
+    directory: books/
+    icon: fa-book
+  - page: movies
+    directory: movies/
+    icon: fa-film
+  - page: guestbook
+    directory: guestbook/
+    icon: fa-comment
+  - page: rss
+    directory: atom.xml
+    icon: fa-rss
+    target: _blank
+
+widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
+  - search
+  - projects
+  - category
+  - tag
+  - recent_posts
+  - recent_comments
+  - links
+
+projects:
+  - title: LeetCode JavaScript 题解
+    url: https://leviding.github.io/leetcode-js-leviding
+
+links:
+  - title: LeviDing.com
+    url: https://leviding.com
+  - title: 我的「GitHub」
+    url: https://github.com/leviding
+  - title: 我的「掘金」主页
+    url: https://juejin.im/user/589881b7128fe1006cbbacec/posts
+  - title: 我的「知乎」主页
+    url: https://www.zhihu.com/people/leviding
+  - title: 我的「微博」主页
+    url: https://weibo.com/leviding
+  - title: 我的「豆瓣」主页
+    url: https://www.douban.com/people/dingxuewen/
+
+timeline:
+  - num: 13
+    word: 2019 年 08 月，对博客进行重建，重置相关统计数据，并发布了 LeetCode JS 题解项目
+  - num: 12
+    word: 2019 年 07 月，从掘金离职，此段工作为期两年整。同月结束自动化学院兼职辅导员工作
+  - num: 11
+    word: 2018 年 12 月，受程序员客栈负责人邀请，任程序员客栈运营负责人，远程工作
+  - num: 10
+    word: 2018 年 09 月，保送至中国地质大学（武汉）控制学科与工程专业攻读硕士学位，师从“长江学者”何勇教授。同月受聘担任自动化学院兼职辅导员，任期一年，负责研究生管理工作
+  - num: 9
+    word: 2018 年 06 月，从中国地质大学（武汉）本科毕业，获工学学士学位
+  - num: 8
+    word: 2018 年 05 月，完成了本科毕业论文《基于集成学习的脑电情感识别方法研究》，并获得校级优秀毕业论文，获评比例 5%
+  - num: 7
+    word: 2017 年 12 月，结束在掘金的实习工作，转为远程兼职工作，此段实习为期四个月
+  - num: 6
+    word: 2017 年 10 月，全额奖学金赴日本进行为期 9 天的短期访学
+  - num: 5
+    word: 2017 年 08 月，在掘金北京实习，全权负责掘金翻译计划
+  - num: 4
+    word: 2015 年 11 月，入选中国地质大学（武汉）科学家计划，入选比例 60/9000
+  - num: 3
+    word: 2015 年 06 月，入选中国地质大学（武汉）李四光计划，入选比例 30/4500
+  - num: 2
+    word: 2014 年 09 月，高考考入中国地质大学（武汉）测控技术与仪器专业
+  - num: 1
+    word: 1995 年 05 月，我出生在吉林延边
+
+# Static files
+js: js
+css: css
+
+# Theme version
+version: 0.0.0
