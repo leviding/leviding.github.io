@@ -9,7 +9,7 @@ description: LeviDing's Blog，丁学文的博客。95 后，男生。不抽烟�
 keywords: LeviDing, JavaScript, Python, Machine Learning, Front-End, Developer, 前端, 机器学习, 产品经理, 产品运营, 程序员, 数据分析, 开发者, 全栈, 全周期
 author: LeviDing
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
