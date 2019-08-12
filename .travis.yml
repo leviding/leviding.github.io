@@ -25,7 +25,7 @@ before_install:
 install:
   - yarn
 
-# 设置git提交名，邮箱；替换真实token到_config.yml文件
+# 设置 git 提交名，邮箱；替换真实 token 到 _config.yml 文件
 before_script:
   - git config user.name "leviding"
   - git config user.email "xuewending1995@gmail.com"

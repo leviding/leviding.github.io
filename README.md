@@ -39,7 +39,7 @@ $ hexo douban -m
 // 本地运行预览
 $ hexo s
 
-// 一键运行和部署，因进行了 GITHUB_TOKEN加密，故本地部署需输入 TOKEN
+// 一键运行和部署，因进行了 GITHUB_TOKEN 加密，故本地部署需输入 TOKEN
 // 此命令执行 deploy.sh 脚本
 $ yarn d
 ```
