@@ -70,9 +70,9 @@ menu:
   - page: about
     directory: about/
     icon: fa-user
-  - page: history
-    directory: history/
-    icon: fa-history
+  #- page: history
+  #  directory: history/
+  #  icon: fa-history
   - page: books
     directory: books/
     icon: fa-book

@@ -25,6 +25,12 @@ date: 2019-03-24 14:32:50
 
 - iPhone XR
 
+**手表：**
+
+- Apple Watch Series 4 黑色
+- CASIO G-SHOCK 黑色
+- LEVI'S 商务石英表 银色
+
 **耳机：**
 
 - Audio-Technica ATH-AR5BT
