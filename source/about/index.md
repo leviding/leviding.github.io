@@ -48,9 +48,9 @@ date: 2019-03-24 14:32:50
 
 - Nintendo Switch
 - Nintendo Switch Pro
-- 塞尔达传说：旷野之息
-- 塞尔达传说：织梦岛
 - 超级马里奥：奥德赛
+- 塞尔达传说：织梦岛
+- 塞尔达传说：旷野之息
 - 喷射战士（Splatoon）2
 
 **电子书：**
@@ -86,12 +86,12 @@ date: 2019-03-24 14:32:50
 
 <img width="30%" src="../img/wechatpub-1.jpg" />
 
-**<center>欢迎关注技术分享公众号「技术漫谈」</center>**
+**<center>欢迎关注我的技术分享公众号「技术漫谈」</center>**
 
 ---
 
 <img width="30%" src="../img/wechatpub-2.jpg" />
 
-**<center>欢迎关注生活分享公众号「智言实验室」</center>**
+**<center>欢迎关注我的生活分享公众号「智言实验室」</center>**
 
 <br><br><br><br>
