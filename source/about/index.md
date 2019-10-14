@@ -5,7 +5,7 @@ date: 2019-03-24 14:32:50
 
 ### 自我介绍
 
-95 后，男生。不抽烟，适度饮酒，有很多奇怪的想法，活跃在知乎和掘金，单身。
+95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在知乎和掘金，单身。
 
 ### 我的设备
 
@@ -36,13 +36,22 @@ date: 2019-03-24 14:32:50
 - Audio-Technica ATH-AR5BT
 - Creative Outlier Sports
 - AirPods 2
-- Earpods
+- Earpods * 2
 
 **相机：**
 
 - Nikon D7100
 - 镜头：Nikon AF-SDX18-140mm f/3.5
 - 镜头：Nikon AF 50mm f/1.8D
+
+**游戏机和配件：**
+
+- Nintendo Switch
+- Nintendo Switch Pro
+- 塞尔达传说：旷野之息
+- 塞尔达传说：织梦岛
+- 超级马里奥：奥德赛
+- 喷射战士（Splatoon）2
 
 **电子书：**
 
@@ -73,10 +82,16 @@ date: 2019-03-24 14:32:50
 - Email：imdingxuewen@gmail.com
 - 注：加好友请说明意图和来源。
 
-### 公众号
+### 微信公众号
 
-<img width="30%" src="../img/wechatpub.jpg" />
+<img width="30%" src="../img/wechatpub-1.jpg" />
 
-**<center>欢迎关注我的微信公众号：智言实验室</center>**
+**<center>欢迎关注技术分享公众号「技术漫谈」</center>**
+
+---
+
+<img width="30%" src="../img/wechatpub-2.jpg" />
+
+**<center>欢迎关注生活分享公众号「智言实验室」</center>**
 
 <br><br><br><br>
