@@ -47,11 +47,7 @@ date: 2019-03-24 14:32:50
 **游戏机和配件：**
 
 - Nintendo Switch
-- Nintendo Switch Pro
-- 超级马里奥：奥德赛
-- 塞尔达传说：织梦岛
-- 塞尔达传说：旷野之息
-- 喷射战士（Splatoon）2
+- Nintendo Switch Pro Controller
 
 **电子书：**
 
