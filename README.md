@@ -76,7 +76,6 @@ $ yarn g
 
 ## Contact Me
 
-WeChat: 517010193
 Mail: [imdingxuewen@gmail.com](mailto:imdingxuewen@gmail.com)
 
 ---
