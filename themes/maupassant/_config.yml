@@ -67,6 +67,10 @@ menu:
   - page: archive
     directory: archives/
     icon: fa-archive
+  - page: algorithm
+    directory: leetcode-js-leviding/
+    icon: fa-rocket
+    target: _blank
   - page: books
     directory: books/
     icon: fa-book
