@@ -67,12 +67,12 @@ menu:
   - page: archive
     directory: archives/
     icon: fa-archive
-  - page: books
-    directory: books/
-    icon: fa-book
-  - page: movies
-    directory: movies/
-    icon: fa-film
+#  - page: books
+#    directory: books/
+#    icon: fa-book
+#  - page: movies
+#    directory: movies/
+#    icon: fa-film
   - page: about
     directory: about/
     icon: fa-user
@@ -82,10 +82,10 @@ menu:
   - page: guestbook
     directory: guestbook/
     icon: fa-comment
-  - page: algorithm
-    directory: leetcode-js-leviding/
-    icon: fa-rocket
-    target: _blank
+#  - page: algorithm
+#    directory: leetcode-js-leviding/
+#    icon: fa-rocket
+#    target: _blank
   - page: rss
     directory: atom.xml
     icon: fa-rss

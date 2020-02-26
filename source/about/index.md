@@ -35,6 +35,7 @@ date: 2019-03-24 14:32:50
 
 - Audio-Technica ATH-AR5BT
 - Creative Outlier Sports
+- AirPods Pro
 - AirPods 2
 - Earpods * 2
 
