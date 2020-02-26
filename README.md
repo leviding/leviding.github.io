@@ -42,9 +42,6 @@ $ hexo s
 // 一键运行和部署，因进行了 GITHUB_TOKEN 加密，故本地部署需输入 TOKEN
 // 此命令执行 deploy.sh 脚本
 $ yarn d
-
-// 本地一键提交至 GitHub
-$ yarn g
 ```
 
 
@@ -72,9 +69,9 @@ $ yarn g
 
 欢迎微信扫码关注我的公众号
 
-| 技术号：技术漫谈 | 生活号：智言实验室 |
+| 技术号：技术漫谈 | 生活号：字节物语 |
 | :----: | :----: |
-| <img src="https://user-images.githubusercontent.com/26959437/67535623-0955e780-f706-11e9-971d-eb418c392957.jpg" width="200px"> | <img src="https://user-images.githubusercontent.com/26959437/67535628-11ae2280-f706-11e9-988d-08989b6e1abb.jpg" width="200px"> |
+| <img src="https://user-images.githubusercontent.com/26959437/67535623-0955e780-f706-11e9-971d-eb418c392957.jpg" width="200px"> | <img src="https://user-images.githubusercontent.com/26959437/74828285-d33e1280-5349-11ea-9f06-d2a84199589e.jpg" width="200px"> |
 
 
 ## Contact Me
