@@ -5,13 +5,15 @@ categories: [基础知识]
 date: 2020-02-26 17:23:00
 ---
 
+在 JavaScript 中，我们经常会看到可迭代对象，迭代器和生成器的概念，它们之间有什么区别和联系呢，我就是想通过这篇文章总结一下，把这个问题搞明白。
+
+<!-- more -->
+
 ## Interable（可迭代对象）
 
 Iterable 是指有 `[Symbol.iterator]` 属性的对象，这个属性 `obj[Symbol.iterator]` 就是 Iterator（迭代器）。也可以说可迭代对象是实现了 `Symbol.iterator` 方法的对象。
 
 可迭代对象可以被 `for..of` 循环遍历，我们最常进行迭代操作的可迭代对象就是 Array，其实还有其他可迭代对象，例如 String、Set、Map、函数的 arguments 对象和 NodeList 对象等，这些对象都有默认的 `Symbol.iterator` 属性。
-
-<!-- more -->
 
 ## Iterator（迭代器）
 
@@ -113,11 +115,8 @@ Generator 是一个特殊函数，调用返回一个 Generator。
 未完待续……
 
 
-
 **参考：**
 
 - [Iterables（可迭代对象）](https://zh.javascript.info/iterable)
 - [JS 可迭代对象、迭代器、生成器](https://github.com/coconilu/Blog/issues/73)
 - [ES6 迭代器与可迭代对象](https://segmentfault.com/a/1190000016824284)
-
-
