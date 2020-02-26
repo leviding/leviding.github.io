@@ -16,13 +16,13 @@ html, button, input, select, textarea,
 .MJXc-TeX-unknown-R,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", Helvetica, Arial, sans-serif !important;
 }
 
 body {
     background-color: #FFF;
     color: #444;
-    font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
@@ -192,11 +192,11 @@ div {
     padding: 25px 0 15px;
     .post-title {
         margin: 0;
-        color: #555;
+        color: #24292e;
         text-align: left;
         font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
         a {
-            color: #555;
+            color: #182026;
         }
     }
     .post-meta {
@@ -260,9 +260,9 @@ div {
     }
     .post-content {
         clear: left;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.77;
-        color: #444;
+        color: #24292e;
         padding-top: 15px;
         text-align: justify;
         text-justify: distribute;
@@ -284,10 +284,11 @@ div {
             overflow-wrap: break-word;
             code {
                 display: inline-block;
-                margin: 0 5px;
-                padding: 0 5px;
+                //margin: 0 1px;
+                padding: 1px 2px;
                 background: #f6f8fa;
                 color:#a71d5d;
+                font-size: 14px;
                 font-family: Menlo, Consolas, monospace !important;
             }
             a {
@@ -300,7 +301,7 @@ div {
             }
         }
         .caption {
-            color: #444;
+            color: #24292e;
             display: block;
             font-size: 0.9em;
             margin-top: 0.1em;
@@ -486,7 +487,7 @@ blockquote::before,.stressed-quote::before {
     font-family: times;
     font-style: normal;
     font-size: 48px;
-    color: #444;
+    color: #24292e;
     font-weight: bold;
     line-height: 30px;
     margin-left: -50px;
