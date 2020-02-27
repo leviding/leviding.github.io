@@ -16,13 +16,13 @@ html, button, input, select, textarea,
 .MJXc-TeX-unknown-R,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", Helvetica, Arial, sans-serif !important;
+    font-family: "-apple-system", "system-ui", "BlinkMacSystemFont", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif !important;
 }
 
 body {
     background-color: #FFF;
     color: #333;
-    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: "-apple-system", "system-ui", "BlinkMacSystemFont", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
     font-size: 14px;
 }
 .body_container {
@@ -35,7 +35,7 @@ body {
     padding-top: 20px;
 }
 a, button.submit {
-    color: #6E7173;
+    color: #333;
     text-decoration: none;
     -webkit-transition: all .1s ease-in;
     -moz-transition: all .1s ease-in;
@@ -43,7 +43,8 @@ a, button.submit {
     transition: all .1s ease-in;
 }
 a:hover, a:active {
-    color: #444;
+    color: #015396;
+    text-decoration: underline #106ba3;
 }
 a:focus {
     outline:auto;
@@ -69,15 +70,15 @@ div {
             overflow: hidden;
         }
         #logo {
-            font: bold 38px/1.12 "Times New Roman", Georgia, Times, sans-serif;
+            font: bold 30px/1.12 "Times New Roman", Georgia, Times, sans-serif;
             color: #555;
             span, &:hover {
                 color: #777;
             }
         }
         .description {
-            margin: .2em 0 0;
-            color: #999;
+            margin: 1em 0 0;
+            color: #666;
         }
     }
     #nav-menu {
@@ -111,6 +112,13 @@ div {
     padding-bottom: 20px;
     word-wrap: break-word;
     .widget {
+        // a{
+        //     color: #106ba3;
+        //     font-size: 15px;
+        //     &:hover {
+        //         text-decoration: underline #555;
+        //     }
+        // }
         margin-bottom: 30px;
         .widget-title {
             color: #6E7173;
@@ -133,16 +141,39 @@ div {
         .tagcloud {
             margin-top: 10px;
             a {
-                line-height: 1.5;
-                padding: 5px;
+                color: #106ba3;
+                background: #e1e8ed;
+                padding: 3px 6px;
+                margin: 4px 5px;
+                display: inline-block;
+                border-radius: 5px;
+                -webkit-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+                //line-height: 1.5;
+                //padding: 5px;
               }
+            a:hover {
+                background: #137cbd;
+                color: #fff;
+            }
         }
         ul {
             list-style: none;
             padding: 0;
             li {
-                margin: 5px 0;
-                line-height: 1.5;
+                padding: 5px 6px;
+                margin: 6px 5px;
+                border-radius: 4px;
+                -webkit-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+                font-size: 15px;
+                line-height: 1.45em;
+                &:hover {
+                    background: #e7ecf0;
+                    text-decoration: none;
+                }
             }
         }
         .category-list-count {
@@ -178,6 +209,7 @@ div {
     }
 }
 
+
 /* title for search result or tagged posts*/
 .label-title {
     margin-top: 1.1em;
@@ -187,7 +219,7 @@ div {
 }
 
 .post {
-    padding: 20px 20px 30px;
+    padding: 30px 0 40px;
     border-bottom: 1px solid #dddddd;
     .post-title {
         margin: 0;
@@ -288,10 +320,10 @@ div {
                 display: inline-block;
                 //margin: 0 1px;
                 padding: 1px 2px;
-                background: #f6f8fa;
-                color:#a71d5d;
+                background: #fff5f5;
+                color: #ff502c;
                 font-size: 14px;
-                font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei" !important;
+                font-family: Menlo, Monaco, Consolas, Courier New, monospace !important;
             }
             a {
                 color: #01579f;
@@ -339,6 +371,7 @@ div {
                 color: #01579f;
                 padding-bottom: 2px;
                 word-break: normal;
+                //border-bottom: 1px solid #d1e9ff;
                 &:hover {
                     text-decoration: underline;
                 }
@@ -358,10 +391,11 @@ div {
     }
 }
 
-.post:hover {
-    border-bottom: 1px solid transparent;
-    box-shadow: 0 3px 15px rgba(0,0,0,.2);
-}
+// .post:hover {
+//     //background-color: #f4f7f7;
+//     //border-bottom: 1px solid transparent;
+//     //box-shadow: 0 3px 15px rgba(0,0,0,.2);
+// }
 
 .page-navigator {
     //border-top: 1px solid #ddd;
@@ -865,6 +899,7 @@ pre {
     &:hover {
         background: #F8F8F8;
         border-bottom-color: #D26911;
+        text-decoration: none;
     }
 }
 

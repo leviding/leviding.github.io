@@ -1,7 +1,7 @@
 ﻿---
 title: 译文：用 -force 对项目有风险，用 -force-with-lease 命令代替吧
 tags: [Git, GitHub, 译文]
-categories: [译文]
+categories: [文章翻译]
 date: 2017-07-30 23:03:22
 ---
 

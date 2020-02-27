@@ -1,7 +1,7 @@
 ﻿---
 title: 译文：学习 JavaScript：阻碍你进步的 9 个常见错误
 tags: [JavaScript, 译文]
-categories: [译文, 前端开发]
+categories: [文章翻译]
 date: 2017-09-17 13:57:44
 ---
 

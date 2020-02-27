@@ -1,7 +1,7 @@
 ﻿---
 title: 译文：带你入门 CSS Grid 布局
 tags: [CSS, Grid, 译文]
-categories: [译文, 前端开发]
+categories: [文章翻译]
 date: 2017-05-16 15:50:30
 ---
 

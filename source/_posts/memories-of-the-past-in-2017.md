@@ -1,7 +1,7 @@
 ---
 title: 记于 2017 年 9 月 11 日晚
 tags: [成长, 随想]
-categories: [随想]
+categories: [生活随想]
 date: 2017-09-16 23:03:22
 ---
 

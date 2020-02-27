@@ -1,7 +1,7 @@
 ---
 title: 译文：你不需要基于 CSS Grid 的栅格布局系统
 tags: [CSS, Grid, 译文]
-categories: [译文, 前端开发]
+categories: [文章翻译]
 date: 2017-07-08 21:30:00
 ---
 

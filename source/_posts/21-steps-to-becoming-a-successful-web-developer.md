@@ -1,7 +1,7 @@
 ﻿---
 title: 译文：21 步 教你成为一名成功的 Web 开发工程师
 tags: [译文]
-categories: [译文]
+categories: [文章翻译]
 date: 2017-05-02 20:30:30
 ---
 
