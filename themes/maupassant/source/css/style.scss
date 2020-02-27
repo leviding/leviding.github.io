@@ -21,10 +21,8 @@ html, button, input, select, textarea,
 
 body {
     background-color: #FFF;
-    color: #444;
+    color: #333;
     font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
 }
 .body_container {
@@ -189,15 +187,15 @@ div {
 }
 
 .post {
-    padding: 20px 10px 30px;
+    padding: 20px 20px 30px;
     border-bottom: 1px solid #dddddd;
     .post-title {
         margin: 0;
-        color: #24292e;
+        color: #555;
         text-align: left;
         font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
         a {
-            color: #182026;
+            color: #333;
         }
         a:hover {
             text-decoration: underline #555;
@@ -360,10 +358,10 @@ div {
     }
 }
 
-// .post:hover {
-//     border-bottom: 1px solid transparent;
-//     box-shadow: 0 3px 15px rgba(0,0,0,.2);
-// }
+.post:hover {
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
 
 .page-navigator {
     //border-top: 1px solid #ddd;
