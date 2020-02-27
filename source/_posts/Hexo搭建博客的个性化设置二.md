@@ -28,11 +28,13 @@ date: 2017-03-03 23:21:32
 
 当然如果你不是用的不蒜子统计也没关系，对上面几句代码进行灵活变通即可，不明白可以发邮件给我。
 
+
 ## 将阅读量改为热度（更个性）
 
 还可以继续修改，看到好多人的博客不是阅读次数（阅读量），而是 xxx 度，那么可以继续这样修改，首先在 Next 主题的 `/themes/next/languages/zh-Hans` 文件中查找”阅读次数“这几个字，可以看到，在 `post` 中的 `visitors` 被定义为“阅读次数”，把这里的“阅读次数”改为“热度”。
 
 那么怎么在页面中显示呢。打开 Next 主题文件夹中 `layout/_macro/post.swig`，在这个文件里加上摄氏度的标志，在 `<span class="leancloud-visitors-count"></span>` 下面增加一行 `<span>℃</span>` 即可。
+
 
 ## 修改标题下分类等的样式
 
@@ -43,6 +45,7 @@ date: 2017-03-03 23:21:32
   <i class="fa fa-eye"></i>
 </span>
 ```
+
 
 ## 增加留言页
 
@@ -81,6 +84,7 @@ menu:
   guestbook: 留言
 ```
 
+
 ## SEO 优化
 
 更改首页标题格式为「关键词-网站名称-网站描述」。打开 `\themes\next\layout\index.swig` 文件，找到这行代码：
@@ -97,6 +101,7 @@ menu:
 {% endblock %}
 ```
 
+
 ## 博客部署的 message 设置
 
 在 `\hexo\node_modules\hexo-deployer-git\lib\deployer.js` 文件末尾找到这一句：
@@ -110,6 +115,7 @@ Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}.
 ```
 勤奋的博主又更新啦: {{ now(\'YYYY-MM-DD HH:mm:ss\') }}.
 ```
+
 
 ## 为项目主页添加 README
 

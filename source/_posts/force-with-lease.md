@@ -1,5 +1,5 @@
 ﻿---
-title: 用 -force 对项目有风险，用 -force-with-lease 命令代替吧
+title: 译文：用 -force 对项目有风险，用 -force-with-lease 命令代替吧
 tags: [Git, GitHub, 译文]
 categories: [译文]
 date: 2017-07-30 23:03:22
@@ -7,9 +7,9 @@ date: 2017-07-30 23:03:22
 
 Git 的 `push --force` 具有破坏性，因为它无条件地覆盖远程存储库，无论你在本地拥有什么。使用这个命令，可能覆盖团队成员在此期间推送的所有更改。然而，有一个更好的办法，当你需要强制推送，但仍需确保不覆盖其他人的工作时，`-force-with-lease` 这条指令选项可以帮助到你。
 
-众所周知，git 的 `push -force` 指令是不推荐被使用的，因为它会破坏其他已经提交到共享库的内容。虽然这不总是完全致命的（如果那些修改的内容仍在某些同事的本地工作域中，那之后他们能被重新合并），但是这样的做法很欠考虑，最糟糕的情况会造成灾难性的损失。这是因为 `--force` 指令选项迫使分支的头指针指向你个人的修改记录，而忽略了那些其他和你同时进行地更改。
-
 <!-- more -->
+
+众所周知，git 的 `push -force` 指令是不推荐被使用的，因为它会破坏其他已经提交到共享库的内容。虽然这不总是完全致命的（如果那些修改的内容仍在某些同事的本地工作域中，那之后他们能被重新合并），但是这样的做法很欠考虑，最糟糕的情况会造成灾难性的损失。这是因为 `--force` 指令选项迫使分支的头指针指向你个人的修改记录，而忽略了那些其他和你同时进行地更改。
 
 强制推动最常见的原因之一是当我们被迫 `rebase` 一个分支的时候。为了说明这一点，我们来看一个例子。我们有一个项目，其中有一个功能分支，Alice 和 Bob 要同时在这个分支上工作。他们都 `git clone...` 了这个仓库，并开始工作。
 
@@ -61,7 +61,7 @@ To /tmp/repo
 
 然而，如果他使用了 `--force-with-lease`，则会得到不同的结果，因为 git 会检查远程分支，发现 从上一次 Bob 使用 `fetch` 到现在，实际上并没有被更新：
 
-```
+```bash
 ssmith$ git push -n --force-with-lease
 To /tmp/repo
  ! [rejected]        dev -> dev (stale info)
@@ -72,7 +72,7 @@ error: failed to push some refs to '/tmp/repo'
 
 一个更微妙的问题是，我们有方法去骗 git，让 git 认为这个分支没有被修改。在正常使用情况下，最常发生这种现象的情况是，Bob 使用 `git fetch` `而不是 `git pull` `来更新他的本地副本。`fetch` 将从远程仓库拉出对象和引用，但没有匹配的 `merge` 则不会更新工作树。这将使本地仓库看起来已经与远程仓库进行了同步更新，但实际上本地仓库并没有进行更新，并欺骗 `--force-with-lease` 命令，成功覆盖远程分支，就像下面这个例子：
 
-```
+```bash
 ssmith$ git push --force-with-lease
 To /tmp/repo
  ! [rejected]        dev -> dev (stale info)
@@ -100,13 +100,13 @@ To /tmp/repo
 
 为了做到这一点，我们使用 git 的 `update-ref` 功能来创建一个新的引用，以保存远程仓库在任何 `rebase` 或 `fetch` 操作前的状态。这有效地标记了我们开始强制 `push` 到远程的工作节点。在这里，我们将远程分支 `dev` 的状态保存到一个名为 `dev-pre-rebase` 的新引用中：
 
-```
+```bash
 ssmith$ git update-ref refs/dev-pre-rebase refs/remotes/origin/dev
 ```
 
 这时呢，我们就可以进行 `rebase` 和 `fetch` 操作，然后使用保存的 `ref` 来保护远程仓库，以防有人在工作时做了更改：
 
-```
+```bash
 ssmith$ git rebase master
 First, rewinding head to replay your work on top of it...
 Applying: Dev commit #1

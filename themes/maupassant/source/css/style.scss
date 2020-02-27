@@ -189,7 +189,8 @@ div {
 }
 
 .post {
-    padding: 25px 0 15px;
+    padding: 20px 10px 30px;
+    border-bottom: 1px solid #dddddd;
     .post-title {
         margin: 0;
         color: #24292e;
@@ -197,6 +198,9 @@ div {
         font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
         a {
             color: #182026;
+        }
+        a:hover {
+            text-decoration: underline #555;
         }
     }
     .post-meta {
@@ -268,7 +272,7 @@ div {
         text-justify: distribute;
         word-break: normal;
         h2 {
-            margin: 1.4em 0 1.1em;
+            margin: 1.1em 0 1.1em;
             border-bottom: 1px solid #eee;
             overflow: hidden;
         }
@@ -289,7 +293,7 @@ div {
                 background: #f6f8fa;
                 color:#a71d5d;
                 font-size: 14px;
-                font-family: Menlo, Consolas, monospace !important;
+                font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei" !important;
             }
             a {
                 color: #01579f;
@@ -331,7 +335,7 @@ div {
                 margin: 0 5px;
                 padding: 0px 5px;
                 background: #f7f8f8;
-                font-family: Menlo, Consolas, monospace !important;
+                font-family: consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei" !important;
             }
             a {
                 color: #01579f;
@@ -356,8 +360,13 @@ div {
     }
 }
 
+// .post:hover {
+//     border-bottom: 1px solid transparent;
+//     box-shadow: 0 3px 15px rgba(0,0,0,.2);
+// }
+
 .page-navigator {
-    border-top: 1px solid #ddd;
+    //border-top: 1px solid #ddd;
     list-style: none;
     margin-top: 25px;
     padding: 25px 0 0;
@@ -881,7 +890,7 @@ figure.highlight,
     .code,
     .tag {
         background-color: inherit;
-        font-family: Menlo, Consolas, monospace;
+        font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
         border:      none;
         padding:     0;
         margin:      0;

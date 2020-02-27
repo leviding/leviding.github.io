@@ -18,6 +18,7 @@ date: 2017-03-11 12:25:30
 - [Hexo 搭建博客的个性化设置一](http://www.dingxuewen.com/article/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE%E4%B8%80/)
 - [Hexo 搭建博客的个性化设置二](http://www.dingxuewen.com/article/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE%E4%BA%8C/)
 
+
 ## 优化主题 sidebar 头像
 
 就是为主题 `sidebar` 头像添加圆形化旋转的效果。修改 `/themes/next/source/css/_common/components/sidebar/sidebar-author.styl` 文件，我的整个 `sidebar-author.styl` 文件的代码如下，你可以直接复制这段代码去替换你这个文件中的所有代码。
@@ -104,6 +105,7 @@ img:hover {
 }
 ```
 
+
 ## 小红心优化
 
 在 [Hexo 搭建博客的个性化设置一](http://www.dingxuewen.com/article/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%AA%E6%80%A7%E5%8C%96%E8%AE%BE%E7%BD%AE%E4%B8%80/#为博客加入鼠标点击显示红心) 这篇文章中我写了如何为博客加入鼠标点击显示小红心，但是如果我们只想在博客的某个页面添加这个功能呢？
@@ -121,9 +123,11 @@ img:hover {
 <script type="text/javascript" src="/js/src/love.js"></script>
 ```
 
+
 ## 文章内文本样式
 
 Markdown 毕竟是为了方便写作，在样式上过于单调。我们可以自己来给文章加一些样式。NexT 作者提供了一个供用户自己定义样式的文件：`\themes\next\source\css\_custom\custom.stly`。可以按照自己的需要写。
+
 
 ## 设置动态title
 
@@ -155,6 +159,7 @@ document.addEventListener('visibilitychange', function () {
 <!--卖萌-->
 <script type="text/javascript" src="/js/src/dytitle.js"></script>
 ```
+
 
 ## 添加听音乐
 
@@ -257,6 +262,7 @@ var songs = [
 
 注意：有时候使用 Firefox 、Chrome时会提示非法插件并禁止使用，遇到这种情况我们把样式代码引入到 `\themes\next\source\css\_custom\custom.stly` 文件即可解决。
 
+
 ### 音乐链接获取
 
 - 先获取歌曲id，直接打开 [网易云音乐网页版](http://music.163.com) 搜索自己喜欢的音乐，点击外链生成器获取歌曲的 ID 。举个例子：（id显而易见吧）
@@ -269,9 +275,11 @@ http://music.163.com/#/song?id=443205403
 - http://music.163.com/api/song/detail/?id=425137664&ids=[425137664]&csrf_token=
 - 将上一步中获取到的网址放到地址栏中，若能正常播放音乐说明获取到的网址是正确的。然后你就可以把这些歌曲添加到自己的网页中了！用这种方法有些歌曲并不能获得，不过时效很长（只要网易云能听）。
 
+
 ## 博文压缩
 
 目前知道的有两个插件可以压缩博文，`hexo-all-minifier` 插件和 `gulp` 插件。`hexo-all-minifier` 虽然使用比较简单，而且也可以压缩图片，但是对文章缩进（输入法全拼模式下按 Tab）不支持，所以暂时使用 `gulp` 压缩手段。
+
 
 ### hexo-all-minifier 使用方法
 
@@ -282,6 +290,7 @@ $ npm install hexo-all-minifier --save
 ```
 
 `hexo g` 编译的时候就会自动压缩 HTML、JS、图片。详情参考插件介绍 [hexo-all-minifier](https://github.com/chenzhutian/hexo-all-minifier)
+
 
 ### glup 使用方法
 
@@ -332,6 +341,7 @@ gulp.task('default', [
 
 生成博文是执行 `hexo g &amp;&amp; gulp` 就会根据 `gulpfile.js` 中的配置，对 `public` 目录中的静态资源文件进行压缩。
 
+
 ## 博文置顶
 
 ### 修改 hexo-generator-index 插件
@@ -369,6 +379,7 @@ module.exports = function(locals){
 };
 ```
 
+
 ### 设置文章置顶
 
 在文章 Front-matter 中添加 top 值，数值越大文章越靠前，如：
@@ -383,6 +394,7 @@ top: 10
 ---
 ```
 
+
 ## Hexo 更改默认 Google 字体库
 
 因为一些国内的客观原因，google 字体库 的访问速度一直很慢，所以生成页面后，访问系统总是会耗费一大部分的时间在加载 google 字体库上，而且经常加载不成功。
@@ -396,6 +408,7 @@ grep -ir fonts.google themes/
 ```
 
 找到对应的 google 字体库地方，用国内的 CDN 字体库替换，如 360 字体库：[360 前端公共库 CDN](http://libs.useso.com/)。
+
 
 ## 首页分割线
 
@@ -414,6 +427,7 @@ grep -ir fonts.google themes/
   }
 }
 ```
+
 
 ## 字体、颜色等设置
 

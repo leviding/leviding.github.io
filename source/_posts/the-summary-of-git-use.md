@@ -23,6 +23,7 @@ git remote add origin https://git.coding.net/Dingxuewen/test.git
 git push -u origin master
 ```
 
+
 ## 上传本地已有项目
 
  1. 第一步需要你在 GitHub 等代码托管平台创建一个新的项目（本文以 GitHub 为例）。
@@ -35,6 +36,7 @@ git remote add origin https://git.coding.net/Dingxuewen/test.git
 git push -u origin master
 ```
 
+
 ## 项目同时上传 GitHub 和 Coding
 
 此处我只是以 GitHub 和 Coding 为例子，当然还有很多其他的版本控制平台，例如 GitLab、GitBucket 和码云等等。做到这我就默认你的项目已经有 `.git` 文件夹啦（这个文件夹是隐藏的，要勾选隐藏的项目才能将其显示出来）。如下图：
@@ -42,6 +44,7 @@ git push -u origin master
 ![](https://i.loli.net/2018/05/21/5b02320fbacd1.png)
 
 **那么现在我们就开始吧！**
+
 
 ### 第一步：修改config文件
 
@@ -56,7 +59,8 @@ git push -u origin master
 	remote = origin
 	merge = refs/heads/master
 ```
- 
+
+
 ### 第二步：文件上传
 
 关闭修改好的文件，用 `cmd` 或 `Git Bash` 等，输入 `f:`，这样进入到了F 盘，再输入 `cd test` 则进入到了`test 文件夹`。接下来依次输入下面的每一行代码，输完一行回车一下，即可完成本地项目与托管平台的链接和项目的上传。
@@ -68,6 +72,7 @@ git add *
 git commit -m 'test'
 git push origin master
 ```
+
 
 ### 第三步：易出现的错误
 
@@ -89,6 +94,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 则输入 `git push -f` 即可，如下图：
 
 ![](https://i.loli.net/2018/05/21/5b02321f9e1e6.png)
+
 
 ### 第四步：以后更新
 

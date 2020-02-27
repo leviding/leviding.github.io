@@ -5,19 +5,19 @@ categories: [开发配置]
 date: 2017-06-01 02:30:30
 ---
 
-## 前言
-
 2013 年 5 月 16 日，在 I/O 大会上，谷歌推出新的 Android 开发环境 —— Android Studio，并对开发者控制台进行了改进，增加了五个新的功能。Android Studio 是一个 Android 集成开发工具，基于 IntelliJ IDEA。类似 Eclipse ADT，Android Studio 提供了集成的 Android 开发工具用于开发和调试。
+
+<!-- more -->
 
 本文记录了我在搭建 Android 开发环境和发布第一个 APP 的过程中遇到的问题，防止今后再遇到此类问题，同时也将这些问题的解决方案分享给大家，Android 我来啦！
 
-<!-- more -->
 
 ## 问题一
 
 当你使用 Android Studio 创建项目时，在项目导入的过程中，一直卡在 `Building gradle project info` 这一步，那么出现这种问题是因为国外网站被墙了。即使你开了 VPN，那这一步所需要的等待时间也是非常人所能忍受，我就是开了 VPN 的，因为 Gradle 官网虽然可以访问，但是速度连蜗牛都赶不上...
 
 ![](https://i.loli.net/2018/05/21/5b0234100b1b8.png)
+
 
 ### 解决方法
 
@@ -31,6 +31,7 @@ date: 2017-06-01 02:30:30
 
 ![](https://i.loli.net/2018/05/21/5b02342acfa19.png)
 
+
 #### 修改项目 `gradle` 版本
 
 修改项目 `gradle-wrapper.properties` 里的 `gradle` 版本为自己电脑已有的 `gradle` 版本（如果你是第一次安装 Android Stidio，那么你的电脑里应该没有其他版本的 gradle，所以你应该使用方法一来解决你的这个问题）。
@@ -42,9 +43,11 @@ date: 2017-06-01 02:30:30
 3. 复制最后一行 `distributionUrl` 这一整行的内容，例如： `distributionUrl=https\://services.gradle.org/distributions/gradle-2.8-all.zip`，替换到你要导入的项目里的 `gradle-wrapper.properties` 文件中。
 4. 重启 Android Studio，重新导入项目就可以了~~
 
+
 ## 问题二
 
 当你编写了一点程序，想要在手机上进行测试，你把相关设置都弄好了，但是仍然提示一个 "No target device found." 的错误。
+
 
 ### 解决方法
 
@@ -52,17 +55,21 @@ date: 2017-06-01 02:30:30
 
 ![](https://i.loli.net/2018/05/21/5b0295d6c0c3d.jpg)
 
+
 ## 问题三
 
 当你以上问题都解决好了，想要将 APP 下载到手机里试一试，但是这时候调度程序时给你了这样的提示：“Installation failed with message Failed to establish session”。
+
 
 ### 解决方法
 
 这时候你赶紧检查下自己是否使用的是小米手机，是的话，在开发者选项里关闭 MIUI 优化即可！
 
+
 ## 问题四
 
 你想把自己写的 APP 发给小伙伴，让他们安装使用，但是你的 APP 安装在他们手机上却打不开，一直闪退。
+
 
 ### 解决方法
 

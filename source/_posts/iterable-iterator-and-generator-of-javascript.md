@@ -15,6 +15,7 @@ Iterable 是指有 `[Symbol.iterator]` 属性的对象，这个属性 `obj[Symbo
 
 可迭代对象可以被 `for..of` 循环遍历，我们最常进行迭代操作的可迭代对象就是 Array，其实还有其他可迭代对象，例如 String、Set、Map、函数的 arguments 对象和 NodeList 对象等，这些对象都有默认的 `Symbol.iterator` 属性。
 
+
 ## Iterator（迭代器）
 
 Iterator 必须有 `next()` 方法，它每次返回一个 `{done: Boolean, value: any}` 对象，这里 `done:true` 表明迭代结束，否则 `value` 就是下一个要迭代的值。

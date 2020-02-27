@@ -7,13 +7,14 @@ date: 2019-01-13 16:56:00
 
 在掘金翻译计划的 2018 年里，共有 300 余名译者参与到国外优质英文文章的翻译和校对工作当中，共输出了 570 余篇优质译文。与广大开发者们一起学习和分享最新的技术内容。
 
+<!-- more -->
+
 从 2015 年 11 月开始，我们发起了掘金翻译计划，现已成长为可能是世界最大最好的英译中技术社区和翻译平台。我们已有超过 [1000 位](https://github.com/xitu/gold-miner#%E6%8E%98%E9%87%91%E7%BF%BB%E8%AF%91%E8%AE%A1%E5%88%92) 优秀的译者，今年翻译了 [TensorFlow 官方中文文档](https://github.com/xitu/tensorflow-docs)，[现代 JavaScript 教程](https://zh.javascript.info/)，[2018 年前端开发者指南](https://legacy.gitbook.com/book/leviding/front-end-handbook-2018/details) 和 [mlkit.cn](https://mlkit.cn)，并与 Google 团队合作，完成了 [Android 官方文档的翻译优化](https://juejin.im/post/5a6e7f726fb9a01c99510f5c)。
 
 翻译计划目前已经翻译完成 [1370](https://github.com/xitu/gold-miner#近期文章列表) 余篇文章，官方文档及手册 [13](https://github.com/xitu/gold-miner#官方文档及手册) 个，共有 [1000](https://github.com/xitu/gold-miner/wiki/%E8%AF%91%E8%80%85%E7%A7%AF%E5%88%86%E8%A1%A8) 余名译者贡献翻译和校对。GitHub Star 18450+，Watch 1080+，Fork 3140+。
 
 这不仅是掘金翻译计划的 2018，更是我们一起成长的故事～
 
-<!-- more -->
 
 ## 翻译计划发展历程
 
