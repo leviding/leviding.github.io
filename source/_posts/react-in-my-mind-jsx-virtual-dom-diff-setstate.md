@@ -15,7 +15,7 @@ date: 2020-05-27 20:10:00
 
 首先，在框架设计层面，React 是 MVC 软件架构中的 View，它只负责视图层的东西，而对于数据和路由等，则由 Redux 和 Router 等来完成。这也就是为什么 React 官方文档说 “React 是一个用于构建用户界面的 JavaScript 库”。而 Vue 则不同，Vue 是基于 MVVM 架构设计的一个框架，所以在架构层面，Vue 和 React 的思想就是不同的。
 
-React 的设计哲学很简单，不可变（Immutable）思想贯穿了整个框架的设计。React 可以说没引进什么新的概念，让开发者能够以类似写原生 JavaScript 代码的方式来使用 React 进行开发。这也就是很多人说 React 的原因，即 JavaScript 基础知识。
+React 的设计哲学很简单，不可变（Immutable）思想贯穿了整个框架的设计。React 可以说没引进什么新的概念，让开发者能够以类似写原生 JavaScript 代码的方式来使用 React 进行开发。这也就是很多人说 React 难的原因，即 JavaScript 基础知识。
 
 而很多人说 Vue 容易上手，可能有些同学就迷惑了，我觉得 Vue 不简单啊。笔者认为，说 Vue 简单是因为 Vue 将很多底层逻辑封装好了，直接给你对应的 API，你调用对应 API 就可以完成对应的工作。所以，你不需要有很扎实的 JavaScript 基础，你只要记住或者能够查阅到对应 API 就可以用 Vue 完成一些基础性的开发。所以有些后端的同学可以看看 Vue 官方文档就能上手基础的前端开发。
 
