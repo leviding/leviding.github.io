@@ -211,7 +211,9 @@ class Example extends React.Component {
 #### shouldComponentUpdate
 
 ```js
-shouldComponentUpdate(nextProps, nextState)
+shouldComponentUpdate(nextProps, nextState) {
+  //...
+}
 ```
 
 它有两个参数，根据此函数的返回值来判断是否进行重新渲染，`true` 表示重新渲染，`false` 表示不重新渲染，默认返回 `true`。注意，首次渲染或者当我们调用 `forceUpdate` 时并不会触发此方法。此方法仅用于性能优化。
@@ -239,6 +241,8 @@ shouldComponentUpdate(nextProps, nextState)
 
 ```js
 getSnapshotBeforeUpdate(prevProps, prevState) {
+  //...
+}
 ```
 
 `getSnapshotBeforeUpdate` 生命周期方法在 `render` 之后，在更新之前（如：更新 DOM 之前）被调用。给了一个机会去获取 DOM 信息，计算得到并返回一个 `snapshot`，这个 `snapshot` 会作为 `componentDidUpdate` 的第三个参数传入。如果你不想要返回值，请返回 `null`，不写的话控制台会有警告。
@@ -264,7 +268,9 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 #### componentDidUpdate
 
 ```js
-componentDidUpdate(prevProps, prevState, snapshot)
+componentDidUpdate(prevProps, prevState, snapshot) {
+  //...
+}
 ```
 
 `componentDidUpdate()` 会在更新后会被立即调用。首次渲染不会执行此方法。在这个函数里我们可以操作 DOM，和发起服务器请求，还可以 `setState`，但是注意一定要用 `if` 语句控制，否则会导致无限循环。
@@ -301,7 +307,9 @@ componentDidUpdate(prevProps) {
 #### static getDerivedStateFromError()
 
 ```js
-static getDerivedStateFromError(error)
+static getDerivedStateFromError(error) {
+  //...
+}
 ```
 
 此生命周期会在后代组件抛出错误后被调用。它将抛出的错误作为参数，并返回一个值以更新 `state`。`getDerivedStateFromError()` 会在渲染阶段调用，因此不允许出现副作用。如遇此类情况，请改用 `componentDidCatch()`。
@@ -310,7 +318,9 @@ static getDerivedStateFromError(error)
 #### componentDidCatch()
 
 ```js
-componentDidCatch(error, info)
+componentDidCatch(error, info) {
+  //...
+}
 ```
 
 此生命周期在后代组件抛出错误后被调用。它接收两个参数：
