@@ -211,28 +211,6 @@ state 是在组件中创建的，一般在 constructor 中初始化 state。stat
 至此，React 的基本概念已经梳理完毕，感谢阅读。笔者水平有限，如果你发现任何问题，欢迎评论指正！
 
 
-## React Fiber
-
-推荐阅读：
-
-- https://zhuanlan.zhihu.com/p/26027085
-- https://juejin.im/post/5ef014e851882565ce7ee0ca
-- https://juejin.im/post/5a2276d5518825619a027f57
-- https://www.infoq.cn/article/what-the-new-engine-of-react/
-
-
-## React 生命周期
-
-推荐阅读：
-
-- [React.Component — React Docs](https://zh-hans.reactjs.org/docs/react-component.html "React.Component — React Docs")
-- [异步渲染之更新 — React Docs](https://zh-hans.reactjs.org/blog/2018/03/27/update-on-async-rendering.html "异步渲染之更新 — React Docs")
-- [Update on Async Rendering — React Docs](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state "Update on Async Rendering — React Docs")
-- [React v16.3 之后的组件生命周期函数](https://zhuanlan.zhihu.com/p/38030418 "React v16.3 之后的组件生命周期函数")
-- [谈谈 React 新的生命周期钩子](https://zhuanlan.zhihu.com/p/42413419 "谈谈 React 新的生命周期钩子")
-- [我对 React v16.4 生命周期的理解](https://juejin.im/post/5b6f1800f265da282d45a79a "我对 React v16.4 生命周期的理解")
-
-
 ## 参考资料
 
 - [React Dosc](https://reactjs.org/docs/getting-started.html)
