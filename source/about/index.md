@@ -34,7 +34,7 @@ date: 2019-03-24 14:32:50
 **耳机：**
 
 - AirPods Pro
-- AirPods 2
+- AirPods 2 (Lost)
 - Earpods * 2
 - Audio-Technica ATH-AR5BT
 - Creative Outlier Sports
@@ -49,7 +49,7 @@ date: 2019-03-24 14:32:50
 
 - Nintendo Switch
 - Nintendo Switch Pro Controller
-- 8BitDo SN30 Pro
+- 8BitDo SN30 Pro (Broken)
 - 一大...堆游戏
 
 **电子书：**
@@ -69,8 +69,9 @@ date: 2019-03-24 14:32:50
 - 摄影
 - 骑行
 - 轮滑
-- 看电影
-- 听音乐
+- 电影
+- 读书
+- 音乐
 
 ### 厌恶
 
