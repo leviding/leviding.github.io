@@ -93,16 +93,18 @@ date: 2019-03-24 14:32:50
 
 <img width="30%" src="../img/wechatpub-1.jpg" />
 
-**<center>欢迎关注我的技术分享公众号「技术漫谈」</center>**
+**<center>欢迎关注我的编程技术分享公众号「技术漫谈」</center>**
+
+---
 
 <img width="30%" src="../img/wechatpub-2.jpg" />
 
-**<center>欢迎关注面试求职公众号「编程每日一题」</center>**
+**<center>欢迎关注我的面试求职分享公众号「编程每日一题」</center>**
 
 ---
 
 <img width="30%" src="../img/wechatpub-3.jpg" />
 
-**<center>欢迎关注我的生活分享公众号「学文同学」</center>**
+**<center>欢迎关注我的生活日常分享公众号「学文同学」</center>**
 
 <br><br><br><br>
