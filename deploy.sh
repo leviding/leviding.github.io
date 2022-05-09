@@ -13,7 +13,7 @@ hexo deploy
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
-git init
-git add -A
-git commit -m ':pencil: update content'
-git push original master
+# git init
+# git add -A
+# git commit -m ':pencil: update content'
+# git push original master

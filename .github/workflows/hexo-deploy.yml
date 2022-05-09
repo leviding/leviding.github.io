@@ -1,0 +1,49 @@
+name: Hexo Deploy
+# 只监听 source 分支的改动
+on:
+  push:
+    branches:
+      - source
+
+# 自定义环境变量，这个GIT_USER和GIT_EMAIL配置成你自己的，GIT_EMAIL尽量和上面的`ssh-keygen -f hexo-deploy-key -C "your email"`中的your email保持一致
+env:
+  GIT_USER: "leviding"
+  GIT_EMAIL: "imdingxuewen@gmail.com"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 获取博客源码和主题
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # 这里用的是 Node.js 13.x，14.x 生成 Hexo 静态页面会有问题
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+
+      # 安装依赖
+      - name: Install Dependencies
+        run: |
+          npm install
+
+      # 从之前设置的 secret 获取部署私钥
+      - name: Setup SSH Keys and known_hosts
+        env:
+          HEXO_DEPLOY_PRI: ${{ secrets.HEXO_DEPLOY_PRI }} 
+        run: |
+          sudo timedatectl set-timezone "Asia/Shanghai"
+          mkdir -p ~/.ssh
+          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.name $GIT_USER
+          git config --global user.email $GIT_EMAIL
+
+      # 生成并部署 `npx hexo clean && npx hexo g -d` or `npm run deploy`
+      - name: Deploy
+        run: |
+          npx hexo clean && npm run d
