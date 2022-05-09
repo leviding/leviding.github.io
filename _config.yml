@@ -122,10 +122,9 @@ baidu_url_submit:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: 
+  # repo: 
     #github: git@github.com:leviding/leviding.github.io.git
     #coding: git@git.coding.net:leviding/leviding.coding.me.git
-    # 下方的 gh_token 会被 .travis.yml 中 sed 命令替换
-    repo: https://github_token@github.com/leviding/leviding.github.io.git
+  repo: git@github.com:leviding/leviding.github.io.git
   branch: master
 - type: baidu_url_submitter
