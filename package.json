@@ -1,7 +1,7 @@
 {
   "scripts": {
     "d": "./deploy.sh",
-    "g": "./gitpush.sh"
+    "push": "./gitpush.sh"
   },
   "name": "blog-backup",
   "version": "1.0.0",
