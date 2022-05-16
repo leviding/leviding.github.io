@@ -46,11 +46,11 @@ Web1.0、Web2.0 本质上是在传递信息，侧重消费；而 Web3.0 则是�
 
 **Web1.0：平台创造、平台所有、平台控制、平台受益。**
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/Zf3Qju4se7tiaYT3louz98Ws7XiaCCg41osKPnAmu1icJRdAo4pRmSKhpMy0tBZpCSXgQ5pibwGNoptiaNkcResGydg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![](../images/1652664252517.jpg)
 
 **Web2.0：用户创造、平台所有、平台控制、平台分配。**
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/Zf3Qju4se7tiaYT3louz98Ws7XiaCCg41oQwUuEf8aXmibkgN9UA8r2GicAYEw4iaCdIYHV6WyHcNOefhh7ogKx6Bog/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![](../images/1652664265955.jpg)
 
 存在的问题：
 
@@ -64,7 +64,7 @@ Web1.0、Web2.0 本质上是在传递信息，侧重消费；而 Web3.0 则是�
 
 **Web3.0：用户创造、用户所有、用户控制、协议分配。**
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/Zf3Qju4se7tiaYT3louz98Ws7XiaCCg41oqRQOL85FDy3zBiaVp8kpF4TSfjcnHHJNybMd85y32Y3gWibIus3sH1rw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)
+![](../images/1652664298419.jpg)
 
 - 用户的数据存储在某个地方，用户对数据拥有完全控制权，未经授权，任何人不能访问和修改数据；
 - 软件需要经过用户授权，才能访问用户特定的数据。
