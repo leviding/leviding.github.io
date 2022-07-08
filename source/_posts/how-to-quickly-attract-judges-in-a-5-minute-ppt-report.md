@@ -1,7 +1,7 @@
 ---
 title: 如何在 5 分钟 PPT 汇报中迅速抓住评委眼球
 tags: [工作技巧, PPT]
-categories: [工作思考]
+categories: [思考总结]
 date: 2019-06-16 22:15:00
 ---
 
