@@ -46,4 +46,4 @@ jobs:
       # 生成并部署 `npx hexo clean && npx hexo g -d` or `npm run deploy`
       - name: Deploy
         run: |
-          npx hexo clean && npm run d
+          npx hexo clean && npm run deploy

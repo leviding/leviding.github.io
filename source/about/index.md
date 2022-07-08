@@ -5,25 +5,22 @@ date: 2019-03-24 14:32:50
 
 ### 自我介绍
 
-95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在知乎和掘金。
+95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在各大社区。
 
 ### 我的设备
 
 **电脑：**
 
 - MacBook Pro (13-inch, 2017)
-- Acer E5-572G-528R
-- iPad 2018
 - iPad Mini 5
 
 **键盘：**
 
-- CHERRY G80-3494 黑色 红轴
 - ikbc DC-87 白色 红轴 蓝牙双模
 
 **手机：**
 
-- iPhone XR
+- iPhone 13
 
 **手表：**
 
@@ -33,9 +30,9 @@ date: 2019-03-24 14:32:50
 
 **耳机：**
 
+- AirPods 2
 - AirPods Pro
-- AirPods 2 (Lost)
-- Earpods * 2
+- AirPods 3
 - Audio-Technica ATH-AR5BT
 - Creative Outlier Sports
 
@@ -61,12 +58,12 @@ date: 2019-03-24 14:32:50
 
 - iPod shuffle
 - Apple pencil 1
-- Homepod mini
+- Homepod mini *2
 - Magic Mouse 2
 - DELL U2414H
 - 戴森 V10 Absolute
-- 小米空气净化器
-- 小米物联网传感器一堆
+- 小米空气净化器 2S *1，4Lite *2
+- 小米电器和传感器
 
 ### 喜欢
 
