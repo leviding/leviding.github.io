@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/leviding/leviding.github.io.svg?branch=source)](https://travis-ci.org/leviding/leviding.github.io)
 
-本项目用于托管 [LeviDing 的博客](https://dingxuewen.com/)，博客源码托管在 [source 分支](https://github.com/leviding/leviding.github.io/tree/source)，当 [Travis CI](https://www.travis-ci.org) 监测到 [source 分支](https://github.com/leviding/leviding.github.io/tree/source)的变化时，自动将博客部署到 [master 分支](https://github.com/leviding/leviding.github.io/tree/master)。
+本项目用于托管 [LeviDing 的博客](https://dingxuewen.com/)，博客源码托管在 [source 分支](https://github.com/leviding/leviding.github.io/tree/source)，当 [GitHub Action](https://github.com/leviding/leviding.github.io/actions/workflows/hexo-deploy.yml) 监测到 [source 分支](https://github.com/leviding/leviding.github.io/tree/source)的变化时，自动将博客部署到 [master 分支](https://github.com/leviding/leviding.github.io/tree/master)。
 
 <!--
 **参考文章：**
@@ -41,7 +41,7 @@ $ hexo s
 
 // 一键运行和部署，因进行了 GITHUB_TOKEN 加密，故本地部署需输入 TOKEN
 // 此命令执行 deploy.sh 脚本
-$ yarn d
+$ yarn deploy
 ```
 
 
@@ -61,7 +61,7 @@ $ git push original source
 
 // 如果本地安装了 yarn，可通过一个命令直接提交
 // 此命令行执行 gitpush.sh 脚本
-$ yarn g
+$ yarn push
 ```
 
 
@@ -69,9 +69,9 @@ $ yarn g
 
 欢迎微信扫码关注我的公众号
 
-| 技术号：技术漫谈 | 生活号：字节物语 |
-| :----: | :----: |
-| <img src="https://user-images.githubusercontent.com/26959437/67535623-0955e780-f706-11e9-971d-eb418c392957.jpg" width="200px"> | <img src="https://user-images.githubusercontent.com/26959437/74828285-d33e1280-5349-11ea-9f06-d2a84199589e.jpg" width="200px"> |
+| 技术号：技术漫谈 | 技术号：编程每日一题 | 个人号：丁学文 |
+| :----: | :----: | :----: |
+| <img src="https://user-images.githubusercontent.com/26959437/67535623-0955e780-f706-11e9-971d-eb418c392957.jpg" width="200px"> | <img src="https://user-images.githubusercontent.com/26959437/177953257-6f822877-320b-4950-a6c0-e821c25b51ba.jpg" width="200px"> | <img src="https://user-images.githubusercontent.com/26959437/177953236-594ac348-4616-4ae4-aa99-e14d96eb6540.jpg" width="200px"> |
 
 
 ## Contact Me
