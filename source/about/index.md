@@ -102,6 +102,6 @@ date: 2019-03-24 14:32:50
 
 <img width="30%" src="../img/wechatpub-3.jpg" />
 
-**<center>欢迎关注我的生活日常分享公众号「学文同学」</center>**
+**<center>欢迎关注我的个人思考分享公众号「丁学文」</center>**
 
 <br><br><br><br>
