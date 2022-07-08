@@ -1,7 +1,7 @@
 ---
 title: Sublime Text 3 个性化设置 & 快捷键总结
 tags: [Sublime, 工具]
-categories: [开发配置]
+categories: [开发总结]
 date: 2017-01-19 19:46:58
 ---
 

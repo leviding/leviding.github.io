@@ -1,7 +1,7 @@
 ---
 title: 近期 Git 使用小结(包括同时同步两个仓库)
 tags: [Git]
-categories: [开发配置]
+categories: [开发总结]
 date: 2017-03-04 14:48:10
 ---
 

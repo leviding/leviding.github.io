@@ -1,7 +1,7 @@
 ﻿---
 title: 使用 Android Studio 创建第一个 APP 时遇到的几个问题
 tags: [Android, Gradle, 小米]
-categories: [开发配置]
+categories: [开发总结]
 date: 2017-06-01 02:30:30
 ---
 
