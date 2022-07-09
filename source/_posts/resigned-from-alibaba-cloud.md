@@ -13,7 +13,7 @@ date: 2022-07-09 18:06:00
 
 离职前的这一周，收到了 Leader 送的周年纪念品和公司给的“一年香”徽章及工牌带，谢谢 Leader，谢谢公司。
 
-<img src="https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709181136WechatIMG43.jpeg" alt="Leader 送的周年纪念品" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709181136WechatIMG43.jpeg" alt="Leader 送的周年纪念品" style="zoom:40%;" />
 
 ![阿里一年香](https://cdn.jsdelivr.net/gh/leviding/oss@master/20220708205619%E9%98%BF%E9%87%8C%E4%B8%80%E5%B9%B4%E9%A6%99.jpeg)
 
