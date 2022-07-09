@@ -13,7 +13,7 @@ date: 2022-07-09 18:06:00
 
 离职前的这一周，收到了 Leader 送的周年纪念品和公司给的“一年香”徽章及工牌带，谢谢 Leader，谢谢公司。
 
-![Leader 送的周年纪念品](https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709181136WechatIMG43.jpeg)
+<img src="https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709181136WechatIMG43.jpeg" alt="Leader 送的周年纪念品" style="zoom:50%;" />
 
 ![阿里一年香](https://cdn.jsdelivr.net/gh/leviding/oss@master/20220708205619%E9%98%BF%E9%87%8C%E4%B8%80%E5%B9%B4%E9%A6%99.jpeg)
 
@@ -23,7 +23,7 @@ date: 2022-07-09 18:06:00
 
 在过去一年多的时间里，因为异地，我们两个人成了飞机、高铁的“常客”。一开始她趁着公司有苏州的出差机会，申请到苏州出差了两个多月，这样我们每周坐一个多小时的高铁就能见面了。项目结束后，我们就大多乘飞机见面。下图是我的乘机航线图，她的乘机次数比我的还多。在异地的这段时间里，她来找我的次数比我找她的次数多很多，以至于有朋友说“一直都是看你老婆来找你”，哈哈哈。
 
-<img src="https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709162841WechatIMG41.jpeg" alt="我的乘机航线图" style="zoom:40%;" />
+<img src="https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709162841WechatIMG41.jpeg" alt="我的乘机航线图" style="zoom:20%;" />
 
 记得有一次，她从杭州回广州，坐地铁到了萧山机场却发现必须要核酸报告，因为前一天更新了政策，但航空公司没通知我们，我们也没注意到。如果是我遇到这样的事，我肯定非常生气，甚至迁怒于对方。但她在告诉我这件事的时候，语气没有丝毫不好，而是说：“我们又可以待一天啦，晚上我们一起去吃猪肚鸡好不。”我知道她也烦、也累，她坐了两个小时地铁才到机场又得坐回来，明天还得再坐两个小时地铁过去。曾经有同事问我，是什么让你决定结婚，我没有回答，现在我想说，可能就是这样的点点滴滴吧。
 
@@ -33,7 +33,7 @@ date: 2022-07-09 18:06:00
 
 此外，我维护的[《现代 JavaScript 教程》](https://github.com/javascript-tutorial/zh.javascript.info)也有一定的待更新量，这段时间我再把教程系统地更新一下。之后我计划以每月一版的更新节奏，形成月报发布出来。
 
-![image-20220709172916521](https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709172916image-20220709172916521.png)
+![现代 JavaScript 教程 GitHub](https://cdn.jsdelivr.net/gh/leviding/oss@master/20220709172916image-20220709172916521.png)
 
 学习是一方面，代码也不能放下。在学习的过程中也要多实际操练操练，多总结，多分享。
 
