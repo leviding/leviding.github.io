@@ -1,7 +1,7 @@
 ---
 title: 字符串和数组常用方法总结
 tags: [面试]
-categories: [基础知识, 前端技术]
+categories: [前端技术]
 date: 2022-07-15 22:00:00
 ---
 
@@ -31,17 +31,17 @@ date: 2022-07-15 22:00:00
    > - 对原数据 **无修改**
    > - 不支持负参数，会被视为 `0`。
 
-   > ```js
-   > let str = "stringify";
-   > 
-   > // 这些对于 substring 是相同的
-   > alert( str.substring(2, 6) ); // "ring"
-   > alert( str.substring(6, 2) ); // "ring"
-   > 
-   > // ……但对 slice 是不同的：
-   > alert( str.slice(2, 6) ); // "ring"（一样）
-   > alert( str.slice(6, 2) ); // ""（空字符串）
-   > ```
+   ```js
+   let str = "stringify";
+   
+   // 这些对于 substring 是相同的
+   alert( str.substring(2, 6) ); // "ring"
+   alert( str.substring(6, 2) ); // "ring"
+   
+   // ……但对 slice 是不同的：
+   alert( str.slice(2, 6) ); // "ring"（一样）
+   alert( str.slice(6, 2) ); // ""（空字符串）
+   ```
 
 8. [str.substr(start [, length])](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substr)：返回字符串从 `start` 开始的给定 `length` 的部分。
 
@@ -89,32 +89,31 @@ date: 2022-07-15 22:00:00
 
    > - 对原数据 **无修改**
    > - 通常只复制数组中的元素。其他对象，即使它们看起来像数组一样，但仍然会被作为一个整体添加：
-   >
-   >   ```js
-   >   let arr = [1, 2];
-   >   
-   >   let arrayLike = {
-   >     0: "something",
-   >     length: 1
-   >   };
-   >   
-   >   alert( arr.concat(arrayLike) ); // 1,2,[object Object]
-   >   ```
-   >
+
+   ```js
+   let arr = [1, 2];
+   let arrayLike = {
+     0: "something",
+     length: 1
+   };
+
+   alert( arr.concat(arrayLike) ); // 1,2,[object Object]
+   ```
+
    > - 除非类数组对象具有 `Symbol.isConcatSpreadable` 属性，那么它就会被 `concat` 当作一个数组来处理：
-   >
-   >   ```js
-   >   let arr = [1, 2];
-   >     
-   >   let arrayLike = {
-   >     0: "something",
-   >     1: "else",
-   >     [Symbol.isConcatSpreadable]: true,
-   >     length: 2
-   >   };
-   >     
-   >   alert( arr.concat(arrayLike) ); // 1,2,something,else
-   >   ```
+
+   ```js
+   let arr = [1, 2];
+
+   let arrayLike = {
+     0: "something",
+     1: "else",
+     [Symbol.isConcatSpreadable]: true,
+     length: 2
+   };
+
+   alert( arr.concat(arrayLike) ); // 1,2,something,else
+   ```
 
 11. `arr.forEach((item, index, array) => { ...对 item 进行处理 })`：无返回值
 
