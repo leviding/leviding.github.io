@@ -123,12 +123,14 @@ links:
     url: https://www.douban.com/people/dingxuewen/
 
 timeline:
-  - num: 24
+  - num: 25
     word: 现在，持续学习成长中，Vue + React + Node + TypeScript + Webpack + Vite + ...，学习 Java 等后端知识
-  - num: 23
+  - num: 24
     word: 2022 年 10 月，回老家办婚礼，辛苦爸妈帮忙筹办
-  - num: 22
+  - num: 23
     word: 2022 年 09 月，入职乐药集团担任前端开发工程师
+  - num: 22
+    word: 2022 年 08 月，给自己放个假，工作后难得自由
   - num: 21
     word: 2022 年 07 月，辞职前往广州，结束了近一年半的异地生活，将此段阿里云之旅定格在了 367 天（535 天）
   - num: 20
