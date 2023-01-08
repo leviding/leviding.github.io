@@ -5,7 +5,7 @@ date: 2019-03-24 14:32:50
 
 ### 自我介绍
 
-95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在各大社区。
+95 后，男生，活跃在各大社区。
 
 ### 我的设备
 
@@ -17,6 +17,7 @@ date: 2019-03-24 14:32:50
 **键盘：**
 
 - ikbc DC-87 白色 红轴 蓝牙双模
+- Apple Magic Keyboard
 
 **手机：**
 
@@ -31,10 +32,9 @@ date: 2019-03-24 14:32:50
 **耳机：**
 
 - AirPods 2
-- AirPods Pro
 - AirPods 3
-- Audio-Technica ATH-AR5BT
-- Creative Outlier Sports
+- AirPods Pro
+- Audio-Technical ATH-AR5BT
 
 **摄影摄像设备：**
 
@@ -47,7 +47,6 @@ date: 2019-03-24 14:32:50
 
 - Nintendo Switch
 - Nintendo Switch Pro Controller
-- 8BitDo SN30 Pro (Broken)
 - 一大...堆游戏
 
 **电子书：**
@@ -59,7 +58,8 @@ date: 2019-03-24 14:32:50
 - iPod shuffle
 - Apple pencil 1
 - Homepod mini *2
-- Magic Mouse 2
+- Apple Magic Mouse 2
+- Apple Magic Trackpad
 - DELL U2414H
 - 戴森 V10 Absolute
 - 小米空气净化器 2S *1，4Lite *2
@@ -67,7 +67,6 @@ date: 2019-03-24 14:32:50
 
 ### 喜欢
 
-- 她
 - 旅行
 - 摄影
 - 骑行
