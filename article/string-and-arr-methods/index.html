@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="LeviDing's Blog，丁学文的博客。95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在知乎和掘金，单身。"><title>字符串和数组常用方法总结 | LeviDing 的博客</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-92630037-1','auto');ga('send','pageview');
+</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">字符串和数组常用方法总结</h1><a id="logo" href="/.">LeviDing 的博客</a><p class="description">心之所向，身之所往！</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 过往</i></a><a href="/guestbook/"><i class="fa fa-comment"> 留言</i></a><a href="/atom.xml" target="_blank"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">字符串和数组常用方法总结</h1><div class="post-meta">Jul 15, 2022<span> | </span><span class="category"><a href="/categories/前端技术/">前端技术</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" data-disqus-identifier="article/string-and-arr-methods/" href="/article/string-and-arr-methods/#disqus_thread"></a><div class="post-content"><p>在 JavaScript 中，字符串和数组的方法特别多，日常也是最长用到的，所以梳理一下，加强记忆。</p>
+<a id="more"></a>
+
+<h2 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h2><ol>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf" target="_blank" rel="noopener">str.indexOf(substr, pos)</a>：从给定位置 <code>pos</code> 开始，在 <code>str</code> 中查找 <code>substr</code>，如果没有找到，则返回 <code>-1</code>，否则返回匹配成功的位置。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf" target="_blank" rel="noopener">str.lastIndexOf(substr, position)</a>：从字符串的末尾开始搜索到开头。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/includes" target="_blank" rel="noopener">str.includes(substr, pos)</a>：根据 <code>str</code> 中是否包含 <code>substr</code> 来返回 <code>true/false</code>。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith" target="_blank" rel="noopener">str.startsWith(substr)</a>：返回 <code>true/false</code>。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith" target="_blank" rel="noopener">str.endsWith(substr)</a>：返回 <code>true/false</code>。</p>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/slice" target="_blank" rel="noopener">str.slice(start [, end])</a>：返回字符串从 <code>start</code> 到（但不包括）<code>end</code> 的部分。</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>无修改</strong></li>
+<li><code>start/end</code> 可以是负值，表示起始位置从字符串结尾计算</li>
+</ul>
+</blockquote>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substring" target="_blank" rel="noopener">str.substring(start [, end])</a>：返回字符串从 <code>start</code> 到（但不包括） <code>end</code> 的部分。这与 <code>slice</code> 几乎相同，但它允许 <code>start</code> 大于 <code>end</code>。</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>无修改</strong></li>
+<li>不支持负参数，会被视为 <code>0</code>。</li>
+</ul>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> str = <span class="string">"stringify"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这些对于 substring 是相同的</span></span><br><span class="line">alert( str.substring(<span class="number">2</span>, <span class="number">6</span>) ); <span class="comment">// "ring"</span></span><br><span class="line">alert( str.substring(<span class="number">6</span>, <span class="number">2</span>) ); <span class="comment">// "ring"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ……但对 slice 是不同的：</span></span><br><span class="line">alert( str.slice(<span class="number">2</span>, <span class="number">6</span>) ); <span class="comment">// "ring"（一样）</span></span><br><span class="line">alert( str.slice(<span class="number">6</span>, <span class="number">2</span>) ); <span class="comment">// ""（空字符串）</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substr" target="_blank" rel="noopener">str.substr(start [, length])</a>：返回字符串从 <code>start</code> 开始的给定 <code>length</code> 的部分。</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>无修改</strong></li>
+<li><code>start</code> 可以是负数，从结尾算起。</li>
+<li>非核心规范内容，而是在附录 B 中</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<h2 id="数组方法"><a href="#数组方法" class="headerlink" title="数组方法"></a>数组方法</h2><ol>
+<li><p><code>arr.at(i)</code>：返回数组 <code>arr</code> 索引 <code>index</code> 对应的元素。如果 <code>i &gt;= 0</code>，则与 <code>arr[i]</code> 完全相同。<code>i</code> 为负数则从数组的末端向前数。</p>
+</li>
+<li><p><code>arr.push(item1, item2, ...)</code>：在末端添加元素 <code>item</code>，return <code>arr.length</code></p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>有修改</strong></li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.pop()</code>：从末端取出一个元素，return 取出的元素</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>有修改</strong></li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.shift()</code>：从首端取出一个元素，return 取出的元素</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>有修改</strong></li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.unshift(item1, item2, ...)</code>：在首端添加元素 <code>item</code>，return <code>arr.length</code></p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>有修改</strong></li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.indexOf/lastIndexOf(item, from)</code>：从索引 <code>from</code> 开始搜索 <code>item</code>，如果找到则返回索引，否则返回 <code>-1</code>。</p>
+</li>
+<li><p><code>arr.includes(item, from)</code>：从索引 <code>from</code> 开始搜索 <code>item</code>，如果找到则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+<blockquote>
+<ul>
+<li>可以正确识别 <code>NaN</code>，但 <code>indexOf/lastIndexOf</code> 不行</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.splice(start[, deleteCount, elem1, ..., elemN])</code>：从索引 <code>start</code> 开始修改 <code>arr</code>：删除 <code>deleteCount</code> 个元素并在当前位置插入 <code>elem1, ..., elemN</code>。最后返回被删除的元素所组成的数组。</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>有修改</strong></li>
+<li>允许负数索引，从数组末尾开始计算位置</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.slice([start], [end])</code>：索引 <code>start</code> 到 <code>end</code>（不包括 <code>end</code>）的数组项复制到一个新的数组并返回。</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>无修改</strong></li>
+<li>两个索引均可为负数，从末尾计算索引。</li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.concat(arg1, arg2...)</code>：接受任意数量的参数（数组或值都可以），创建一个新数组，其中包含所有参数的值。</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>无修改</strong></li>
+<li>通常只复制数组中的元素。其他对象，即使它们看起来像数组一样，但仍然会被作为一个整体添加：</li>
+</ul>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"><span class="keyword">let</span> arrayLike = &#123;</span><br><span class="line">  <span class="number">0</span>: <span class="string">"something"</span>,</span><br><span class="line">  length: <span class="number">1</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">alert( arr.concat(arrayLike) ); <span class="comment">// 1,2,[object Object]</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ul>
+<li>除非类数组对象具有 <code>Symbol.isConcatSpreadable</code> 属性，那么它就会被 <code>concat</code> 当作一个数组来处理：</li>
+</ul>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> arrayLike = &#123;</span><br><span class="line">  <span class="number">0</span>: <span class="string">"something"</span>,</span><br><span class="line">  <span class="number">1</span>: <span class="string">"else"</span>,</span><br><span class="line">  [<span class="built_in">Symbol</span>.isConcatSpreadable]: <span class="literal">true</span>,</span><br><span class="line">  length: <span class="number">2</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">alert( arr.concat(arrayLike) ); <span class="comment">// 1,2,something,else</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>arr.forEach((item, index, array) =&gt; { ...对 item 进行处理 })</code>：无返回值</p>
+</li>
+<li><p><code>arr.find((item, index, array) =&gt; {})</code>：返回 <code>true</code> 则停止搜索并返回 <code>item</code>，否则返回 <code>undefined</code>。</p>
+</li>
+<li><p><code>arr.findIndex/findLastIndex((item, index, array) =&gt; {})</code>：与 <code>arr.find</code> 基本相同，但返回找到的元素的 <code>index</code> 而不是 <code>item</code>，没找到则返回 <code>-1</code>。</p>
+</li>
+<li><p><code>let results = arr.filter((item, index, array) =&gt; {});</code>：处理函数中 <code>return true</code> 则会将 <code>item push</code> 到 <code>results</code>，如果没有符合条件的，则 <code>results</code> 为空数组。</p>
+</li>
+<li><p><code>map((item, index, array) =&gt; {})</code>：返回结果数组</p>
+</li>
+<li><p><code>arr.sort(func)</code>：对数组进行原位排序</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>有修改</strong></li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.reverse()</code>：颠倒 <code>arr</code> 中元素的顺序</p>
+<blockquote>
+<ul>
+<li>对原数据 <strong>有修改</strong></li>
+</ul>
+</blockquote>
+</li>
+<li><p><code>arr.split(delim)</code></p>
+</li>
+<li><p><code>arr.join(glue)</code></p>
+</li>
+<li><p><code>arr.reduce((accumulator, item, index, array) =&gt; {}, [initial])</code>：</p>
+<blockquote>
+<ul>
+<li><code>accumulator</code> 是上一个函数调用的结果，第一次等于 <code>initial</code>（如果提供了 <code>initial</code>）</li>
+<li><code>arr.reduceRight</code> 和 <code>arr.reduce</code> 方法功能一样，只是遍历从右到左</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>LeviDing</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="/article/string-and-arr-methods/">https://www.dingxuewen.com/article/string-and-arr-methods/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li></ul></div><br><div class="tags"><a href="/tags/面试/">面试</a></div><div class="post-nav"><a class="next" href="/article/resigned-from-alibaba-cloud/">我从阿里云离职了，下一站，广州</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'https://www.dingxuewen.com/article/string-and-arr-methods/';
+    this.page.identifier = 'article/string-and-arr-methods/';
+    this.page.title = '字符串和数组常用方法总结';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//dingxuewen.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//dingxuewen.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://dingxuewen.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://www.dingxuewen.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-tasks"> 开源项目</i></div><ul></ul><a href="https://leviding.github.io/technical-talk" title="最新技术知识和趣闻" target="_blank">最新技术知识和趣闻</a><ul></ul><a href="https://zh.javascript.info" title="现代 JavaScript 教程" target="_blank">现代 JavaScript 教程</a><ul></ul><a href="https://leviding.github.io/leetcode-js-leviding" title="LeetCode JavaScript 题解" target="_blank">LeetCode JavaScript 题解</a></div><div class="widget"><div class="widget-title"><i class="fa fa-folder"> 文章分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端技术/">前端技术</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基础知识/">基础知识</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发总结/">开发总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思考总结/">思考总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/文章翻译/">文章翻译</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/有趣好玩/">有趣好玩</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活随想/">生活随想</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/项目实战/">项目实战</a><span class="category-list-count">4</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-tags"> 内容标签</i></div><div class="tagcloud"><a href="/tags/成长/" style="font-size: 15px;">成长</a> <a href="/tags/工作/" style="font-size: 15px;">工作</a> <a href="/tags/思考/" style="font-size: 15px;">思考</a> <a href="/tags/总结/" style="font-size: 15px;">总结</a> <a href="/tags/年度总结/" style="font-size: 15px;">年度总结</a> <a href="/tags/译文/" style="font-size: 15px;">译文</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next/" style="font-size: 15px;">Next</a> <a href="/tags/Site/" style="font-size: 15px;">Site</a> <a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/多抓鱼/" style="font-size: 15px;">多抓鱼</a> <a href="/tags/文案/" style="font-size: 15px;">文案</a> <a href="/tags/管理/" style="font-size: 15px;">管理</a> <a href="/tags/营销/" style="font-size: 15px;">营销</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/Grid/" style="font-size: 15px;">Grid</a> <a href="/tags/微信读书/" style="font-size: 15px;">微信读书</a> <a href="/tags/运营/" style="font-size: 15px;">运营</a> <a href="/tags/市场/" style="font-size: 15px;">市场</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/热点/" style="font-size: 15px;">热点</a> <a href="/tags/工作技巧/" style="font-size: 15px;">工作技巧</a> <a href="/tags/PPT/" style="font-size: 15px;">PPT</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a> <a href="/tags/Sass/" style="font-size: 15px;">Sass</a> <a href="/tags/Scss/" style="font-size: 15px;">Scss</a> <a href="/tags/Less/" style="font-size: 15px;">Less</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Chrome/" style="font-size: 15px;">Chrome</a> <a href="/tags/随想/" style="font-size: 15px;">随想</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Gradle/" style="font-size: 15px;">Gradle</a> <a href="/tags/小米/" style="font-size: 15px;">小米</a> <a href="/tags/面试/" style="font-size: 15px;">面试</a> <a href="/tags/心理学/" style="font-size: 15px;">心理学</a> <a href="/tags/Sublime/" style="font-size: 15px;">Sublime</a> <a href="/tags/工具/" style="font-size: 15px;">工具</a> <a href="/tags/开源/" style="font-size: 15px;">开源</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/article/string-and-arr-methods/">字符串和数组常用方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/resigned-from-alibaba-cloud/">我从阿里云离职了，下一站，广州</a></li><li class="post-list-item"><a class="post-list-link" href="/article/about-git-add/">git add .，git add -A，git add -u，git add * 的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/2020-annual-summary/">学文同学的 2020 年度总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-lifecycle-version-16-4/">我对 React V16.4 生命周期的理解</a></li><li class="post-list-item"><a class="post-list-link" href="/article/introduction-to-css-preprocessor/">初谈 CSS 预处理器</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-in-my-mind-jsx-virtual-dom-diff-setstate/">React 之我见：JSX，虚拟 DOM，Diff 算法，setState，state 和 props 梳理</a></li><li class="post-list-item"><a class="post-list-link" href="/article/iterable-iterator-and-generator-of-javascript/">Iterable，Iterator，Generator 三者的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/how-to-quickly-attract-judges-in-a-5-minute-ppt-report/">如何在 5 分钟 PPT 汇报中迅速抓住评委眼球</a></li><li class="post-list-item"><a class="post-list-link" href="/article/do-you-really-know-how-to-write-a-good-copy/">你真的知道怎么写文案吗 —《文案训练手册》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//dingxuewen.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-list"> 社交账号</i></div><ul></ul><a href="https://leviding.com" title="LeviDing.com" target="_blank">LeviDing.com</a><ul></ul><a href="https://github.com/leviding" title="我的「GitHub」" target="_blank">我的「GitHub」</a><ul></ul><a href="https://juejin.im/user/589881b7128fe1006cbbacec/posts" title="我的「掘金」主页" target="_blank">我的「掘金」主页</a><ul></ul><a href="https://www.zhihu.com/people/leviding" title="我的「知乎」主页" target="_blank">我的「知乎」主页</a><ul></ul><a href="https://weibo.com/leviding" title="我的「微博」主页" target="_blank">我的「微博」主页</a><ul></ul><a href="https://www.douban.com/people/dingxuewen/" title="我的「豆瓣」主页" target="_blank">我的「豆瓣」主页</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017-2023 LeviDing.</div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

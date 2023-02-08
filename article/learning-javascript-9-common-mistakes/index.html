@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="LeviDing's Blog，丁学文的博客。95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在知乎和掘金，单身。"><title>译文：学习 JavaScript：阻碍你进步的 9 个常见错误 | LeviDing 的博客</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-92630037-1','auto');ga('send','pageview');
+</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">译文：学习 JavaScript：阻碍你进步的 9 个常见错误</h1><a id="logo" href="/.">LeviDing 的博客</a><p class="description">心之所向，身之所往！</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 过往</i></a><a href="/guestbook/"><i class="fa fa-comment"> 留言</i></a><a href="/atom.xml" target="_blank"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">译文：学习 JavaScript：阻碍你进步的 9 个常见错误</h1><div class="post-meta">Sep 17, 2017<span> | </span><span class="category"><a href="/categories/文章翻译/">文章翻译</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2.2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 7</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" data-disqus-identifier="article/learning-javascript-9-common-mistakes/" href="/article/learning-javascript-9-common-mistakes/#disqus_thread"></a><div class="post-content"><p>很多人尝试学习 JavaScript ，但是不久就放弃了。然后他们就告诉自己，“JavaScript 太复杂了”，更有甚者说，“我不是前端开发的料”。这种情况挺让人悲伤的。其实根本不必放弃，所要做的仅仅是换一种不同的学习方法。</p>
+<a id="more"></a>
+
+<p>在这篇文章中，我们将介绍一些最常见的错误学习方法，并了解如何避免这些错误。许多技巧不仅适用于 JavaScript，甚至可以用到 web 开发上，所以也算是一种福利。</p>
+<p>我们来吧！</p>
+<h2 id="错误-1：开始学习之前过度分析"><a href="#错误-1：开始学习之前过度分析" class="headerlink" title="错误 #1：开始学习之前过度分析"></a>错误 #1：开始学习之前过度分析</h2><p>开始学习 JavaScript 之前，你可以找到很多相关的信息。如果你去看，就会发现一些 JavaScript 是最好的或者是最坏的、你是需要这个框架还那个框架的相关信息。你也可能会听到你需要以某种方式编写 JavaScript，否则你永远不会成为“真正”的开发人员等。</p>
+<p>不管这些说的正确与否，没有什么比浪费六个月到一年还没有开始更糟糕。</p>
+<p>开始敲代码吧，它不一定完美，可能很糟糕。但如果你开始了，就通过了阻碍很多人的障碍之一了。</p>
+<h2 id="错误-2：学习原生-JavaScript-之前学习框架"><a href="#错误-2：学习原生-JavaScript-之前学习框架" class="headerlink" title="错误 #2：学习原生 JavaScript 之前学习框架"></a>错误 #2：学习原生 JavaScript 之前学习框架</h2><p>JavaScript 框架建立在原生 JavaScript 之上，因此如果你理解了 JavaScript，你也就自然而然的知道如何使用任何 JavaScript 框架的基本原理。</p>
+<p>然而，如果你直接学习一个框架，最后也只是记住了它的语法却不理解它的原理。这就像在不知道词语意思的情况下造句，最终你只是随便地记住了一些词语，却不知道这些词语的意思并且不会组织这些词语来学以致用。</p>
+<p>如果你直接进入一个框架，那将会更难学习，当你需要另一个框架你会更难适应。如果你首先学习基础的 JavaScript，那么你将有一个坚实的基础来了解所有的框架。</p>
+<h2 id="错误-3：好高骛远"><a href="#错误-3：好高骛远" class="headerlink" title="错误 #3：好高骛远"></a>错误 #3：好高骛远</h2><p>最常见的错误之一就是在理解概念之后立即采取行动。</p>
+<p>我一直在努力解决这个问题，因为一旦了解某些东西，你就想更进一步。</p>
+<p>像对待新玩具一样对待每个概念是很有帮助的；这意味着你需要花一些时间来享受你刚学到的东西。玩耍、实验，看看你能不能做一些新的事情。你会学到很多，你会记得更好。</p>
+<p>当你感觉自己闭着眼睛都能运用自如的时候再继续向下学习。可能在达到这一步之前，你需要更多的时间，但是这将是你接下来的学习变得更快。</p>
+<p>另一方面，如果你过于急躁，你就不会太注意细节。但令人沮丧的是，这会使你之后的学习成本大幅提升。其实这也是人们常说要放弃学习 JavaScript 的常见原因之一。</p>
+<h2 id="错误-4：没有将概念理解透彻"><a href="#错误-4：没有将概念理解透彻" class="headerlink" title="错误 #4：没有将概念理解透彻"></a>错误 #4：没有将概念理解透彻</h2><p>学习就像爬楼梯：如果你能走一步，你可以继续采取更多的步骤，直到你达到目标。当有些东西难以理解时，往往是因为你想要进行一次飞跃，而不是一次走一步。当然这是痴心妄想！</p>
+<p>在实际场景中，我看到人们对某段代码不理解的时候，我会请他们解释一下，他们会试图一下解释清整个问题。那我会请他们再一行一行的解释一遍，这样是有道理的。</p>
+<p>如果有些部分很让人费解，那经常是因为跳过了某些东西，那么这也将有助于你去关注细节，直到找出症结所在。如果一个概念在分解之后仍然没有意义，那你也会有更容易找到相关解决方法，因为查找特定的主题比胡乱搜索更容易。</p>
+<h2 id="错误-5：太早尝试复杂的项目"><a href="#错误-5：太早尝试复杂的项目" class="headerlink" title="错误 #5：太早尝试复杂的项目"></a>错误 #5：太早尝试复杂的项目</h2><p>刚开始学习 JavaScript 的人经常会说“我就随便定个小目标，写一个 Facebook 那样的网站算了”，没有意识到项目所涉及的深度。当项目逐渐深入时，他们就放弃学习 JavaScript 了。</p>
+<p>我更详细地介绍了<a href="https://www.sitepoint.com/projects-can-sometimes-be-the-worst-way-to-learn-javascript/" target="_blank" rel="noopener">关于项目</a>，但是在学习的时候，从一些基本概念开始会更容易。当你开始做项目时，你可以在工具包中添加一些构建工具。</p>
+<p>更明确地说，我不是要那种越旷日持久的项目。我刚刚发现，如果我先做了一些简单的部分，比如在浏览器中显示一些文本或响应一个按钮，那么就可以更轻松地启动项目。</p>
+<h2 id="错误-6：不在真实环境下练习"><a href="#错误-6：不在真实环境下练习" class="headerlink" title="错误 #6：不在真实环境下练习"></a>错误 #6：不在真实环境下练习</h2><p>当你学习 JavaScript 时，你可能会在不符合真实环境下进行练习。例如，你可能在网站的内置代码编辑器中输入内容，或者你可能依赖于教程中的粘贴文件。</p>
+<p>这些方法对于学习来说可能是非常好的，但是你也可以尝试自己搭建环境。这意味着使用你自己的文本编辑器，并从头开始编写项目。</p>
+<p>如果你不自己独立练习每一个概念，那你会依赖于训练环境。你最终会遇到这样的情况：你已经花了很多时间来学习，但你一个都无法掌握。</p>
+<h2 id="错误-7：将自己与大神进行比较"><a href="#错误-7：将自己与大神进行比较" class="headerlink" title="错误 #7：将自己与大神进行比较"></a>错误 #7：将自己与大神进行比较</h2><p>让自己更沮丧的最简单的方法之一就是和大神进行比较。因为你总是看他们在那里，而不是看他们如何到达那里。</p>
+<p>举个例子，人们看到我的教程，并问我如何写这么干净的代码。他们说他们无法编写像这样的干净的代码，所以也许他们根本就不是 JavaScript 的那块料。</p>
+<p>事实是我的过程是一团糟。我不断试验、犯错、查阅资料，写下丑陋的代码，最后把所有的内容都细化成一个可呈现的教程。人们看了优秀的版本，并且假设整个过程就是这样的。我也做过关于教程作者的这些假设，直到我开始写我自己的教程。</p>
+<p>关键点是，认真学习你正在学习的东西，你会得到进步。继续重复这个过程，很快别人就会好奇你是如何达到那种高度的。</p>
+<h2 id="错误-8：只看教程不写代码"><a href="#错误-8：只看教程不写代码" class="headerlink" title="错误 #8：只看教程不写代码"></a>错误 #8：只看教程不写代码</h2><p>你会自然而然的花费大量的时间来观看视频和教程，但是除非你自己动手编写代码，否则你不能真的学会。</p>
+<p>光看而不采取实际行动是很危险的，你会有一种你正在学习的错觉。六个月后，你会发现自己什么都没学会。</p>
+<p>写 15 分钟的代码比上你光看一小时的教程有用多了。</p>
+<h2 id="错误-9：没有事先理解或自行尝试就盲目跟从教程"><a href="#错误-9：没有事先理解或自行尝试就盲目跟从教程" class="headerlink" title="错误 #9：没有事先理解或自行尝试就盲目跟从教程"></a>错误 #9：没有事先理解或自行尝试就盲目跟从教程</h2><p>阅读教程时，很容易陷入照葫芦画瓢的情况。这种教程并不会教你如何解决一个问题，例如需要进行怎样的测试，如何一步一步的探索可能出问题的方向。因此，只会跟着教程走的人往往学不到真正的知识。</p>
+<p>那么解决方案是什么？</p>
+<p>不要只知道跟着教程一步步走，而是要花点儿时间去自己实现。例如，如果您正在学习幻灯片教程，请尝试显示和隐藏 div，然后尝试计时，然后尝试另一个小部分。相对于跟着教程一步步地走，通过亲身尝试并拓展你将学到更多知识，并且有可能将它应用得更好。</p>
+<h2 id="小贴士"><a href="#小贴士" class="headerlink" title="小贴士"></a>小贴士</h2><p>在你读完这篇文章后，如果你问我最想让你记住什么，那就是通过采取最小的步骤来取得最大的进步。</p>
+<p>无论你在学习什么，都要好好学习它本质上的东西。尝试你学到的东西，并乐在其中。</p>
+<p>有时可能很困难，但这没关系。挑战意味着你正在提升个人能力，这将使你进步。如果一切总是太容易，这可能意味你需要进行些改变了。</p>
+<p>我希望这篇文章对你有所帮助，如果有什么其他的帮助过你学习 JavaScript 的方法，欢迎你随时在评论中分享！</p>
+<hr>
+<blockquote>
+<ul>
+<li>原文地址：<a href="https://www.sitepoint.com/learning-javascript-9-common-mistakes/" target="_blank" rel="noopener">Learning JavaScript: 9 Common Mistakes That Are Holding You Back</a></li>
+<li>原文作者：<a href="https://www.sitepoint.com/author/yberhanu/" target="_blank" rel="noopener">Yaphi Berhanu</a></li>
+<li>翻译和校对：<a href="https://github.com/lekenny" target="_blank" rel="noopener">lekenny</a> <a href="https://github.com/lampui" target="_blank" rel="noopener">lampui</a> <a href="https://github.com/Yuuoniy" target="_blank" rel="noopener">Yuuoniy</a></li>
+<li>审阅：<a href="http://www.dingxuewen.com">LeviDing</a></li>
+</ul>
+</blockquote>
+</div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>LeviDing</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="/article/learning-javascript-9-common-mistakes/">https://www.dingxuewen.com/article/learning-javascript-9-common-mistakes/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li></ul></div><br><div class="tags"><a href="/tags/译文/">译文</a><a href="/tags/JavaScript/">JavaScript</a></div><div class="post-nav"><a class="pre" href="/article/mainfest-json-for-chrome-plugin-development/">Chrome 插件开发之 mainfest.json</a><a class="next" href="/article/memories-of-the-past-in-2017/">记于 2017 年 9 月 11 日晚</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'https://www.dingxuewen.com/article/learning-javascript-9-common-mistakes/';
+    this.page.identifier = 'article/learning-javascript-9-common-mistakes/';
+    this.page.title = '译文：学习 JavaScript：阻碍你进步的 9 个常见错误';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//dingxuewen.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//dingxuewen.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://dingxuewen.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://www.dingxuewen.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-tasks"> 开源项目</i></div><ul></ul><a href="https://leviding.github.io/technical-talk" title="最新技术知识和趣闻" target="_blank">最新技术知识和趣闻</a><ul></ul><a href="https://zh.javascript.info" title="现代 JavaScript 教程" target="_blank">现代 JavaScript 教程</a><ul></ul><a href="https://leviding.github.io/leetcode-js-leviding" title="LeetCode JavaScript 题解" target="_blank">LeetCode JavaScript 题解</a></div><div class="widget"><div class="widget-title"><i class="fa fa-folder"> 文章分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端技术/">前端技术</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基础知识/">基础知识</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发总结/">开发总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思考总结/">思考总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/文章翻译/">文章翻译</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/有趣好玩/">有趣好玩</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活随想/">生活随想</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/项目实战/">项目实战</a><span class="category-list-count">4</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-tags"> 内容标签</i></div><div class="tagcloud"><a href="/tags/成长/" style="font-size: 15px;">成长</a> <a href="/tags/工作/" style="font-size: 15px;">工作</a> <a href="/tags/思考/" style="font-size: 15px;">思考</a> <a href="/tags/总结/" style="font-size: 15px;">总结</a> <a href="/tags/年度总结/" style="font-size: 15px;">年度总结</a> <a href="/tags/译文/" style="font-size: 15px;">译文</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next/" style="font-size: 15px;">Next</a> <a href="/tags/Site/" style="font-size: 15px;">Site</a> <a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/多抓鱼/" style="font-size: 15px;">多抓鱼</a> <a href="/tags/文案/" style="font-size: 15px;">文案</a> <a href="/tags/管理/" style="font-size: 15px;">管理</a> <a href="/tags/营销/" style="font-size: 15px;">营销</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/Grid/" style="font-size: 15px;">Grid</a> <a href="/tags/微信读书/" style="font-size: 15px;">微信读书</a> <a href="/tags/运营/" style="font-size: 15px;">运营</a> <a href="/tags/市场/" style="font-size: 15px;">市场</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/热点/" style="font-size: 15px;">热点</a> <a href="/tags/工作技巧/" style="font-size: 15px;">工作技巧</a> <a href="/tags/PPT/" style="font-size: 15px;">PPT</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a> <a href="/tags/Sass/" style="font-size: 15px;">Sass</a> <a href="/tags/Scss/" style="font-size: 15px;">Scss</a> <a href="/tags/Less/" style="font-size: 15px;">Less</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Chrome/" style="font-size: 15px;">Chrome</a> <a href="/tags/随想/" style="font-size: 15px;">随想</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Gradle/" style="font-size: 15px;">Gradle</a> <a href="/tags/小米/" style="font-size: 15px;">小米</a> <a href="/tags/面试/" style="font-size: 15px;">面试</a> <a href="/tags/心理学/" style="font-size: 15px;">心理学</a> <a href="/tags/Sublime/" style="font-size: 15px;">Sublime</a> <a href="/tags/工具/" style="font-size: 15px;">工具</a> <a href="/tags/开源/" style="font-size: 15px;">开源</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/article/string-and-arr-methods/">字符串和数组常用方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/resigned-from-alibaba-cloud/">我从阿里云离职了，下一站，广州</a></li><li class="post-list-item"><a class="post-list-link" href="/article/about-git-add/">git add .，git add -A，git add -u，git add * 的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/2020-annual-summary/">学文同学的 2020 年度总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-lifecycle-version-16-4/">我对 React V16.4 生命周期的理解</a></li><li class="post-list-item"><a class="post-list-link" href="/article/introduction-to-css-preprocessor/">初谈 CSS 预处理器</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-in-my-mind-jsx-virtual-dom-diff-setstate/">React 之我见：JSX，虚拟 DOM，Diff 算法，setState，state 和 props 梳理</a></li><li class="post-list-item"><a class="post-list-link" href="/article/iterable-iterator-and-generator-of-javascript/">Iterable，Iterator，Generator 三者的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/how-to-quickly-attract-judges-in-a-5-minute-ppt-report/">如何在 5 分钟 PPT 汇报中迅速抓住评委眼球</a></li><li class="post-list-item"><a class="post-list-link" href="/article/do-you-really-know-how-to-write-a-good-copy/">你真的知道怎么写文案吗 —《文案训练手册》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//dingxuewen.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-list"> 社交账号</i></div><ul></ul><a href="https://leviding.com" title="LeviDing.com" target="_blank">LeviDing.com</a><ul></ul><a href="https://github.com/leviding" title="我的「GitHub」" target="_blank">我的「GitHub」</a><ul></ul><a href="https://juejin.im/user/589881b7128fe1006cbbacec/posts" title="我的「掘金」主页" target="_blank">我的「掘金」主页</a><ul></ul><a href="https://www.zhihu.com/people/leviding" title="我的「知乎」主页" target="_blank">我的「知乎」主页</a><ul></ul><a href="https://weibo.com/leviding" title="我的「微博」主页" target="_blank">我的「微博」主页</a><ul></ul><a href="https://www.douban.com/people/dingxuewen/" title="我的「豆瓣」主页" target="_blank">我的「豆瓣」主页</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017-2023 LeviDing.</div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

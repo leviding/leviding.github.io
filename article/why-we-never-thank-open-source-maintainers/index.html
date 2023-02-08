@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="LeviDing's Blog，丁学文的博客。95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在知乎和掘金，单身。"><title>译文：为什么我们从来不去感谢开源项目维护者 | LeviDing 的博客</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-92630037-1','auto');ga('send','pageview');
+</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">译文：为什么我们从来不去感谢开源项目维护者</h1><a id="logo" href="/.">LeviDing 的博客</a><p class="description">心之所向，身之所往！</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 过往</i></a><a href="/guestbook/"><i class="fa fa-comment"> 留言</i></a><a href="/atom.xml" target="_blank"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">译文：为什么我们从来不去感谢开源项目维护者</h1><div class="post-meta">Dec 25, 2017<span> | </span><span class="category"><a href="/categories/文章翻译/">文章翻译</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.4k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" data-disqus-identifier="article/why-we-never-thank-open-source-maintainers/" href="/article/why-we-never-thank-open-source-maintainers/#disqus_thread"></a><div class="post-content"><p>你现在可以到 <a href="https://www.thankyouopensource.com" target="_blank" rel="noopener">Thank you, open source</a> 这个网站上为你最喜欢的开源项目写一句感谢的话了。</p>
+<p>下面是我对为什么我们从来不去感谢开源项目维护者的一些看法。</p>
+<a id="more"></a>
+
+<h2 id="这样的项目我也可以做啊"><a href="#这样的项目我也可以做啊" class="headerlink" title="这样的项目我也可以做啊"></a>这样的项目我也可以做啊</h2><blockquote>
+<p>“蛤？这项目对我来说也太简单了吧。”</p>
+<p>“我一周之内就能做一个更好的版本出来。”</p>
+</blockquote>
+<p>确实，很多人都可以在黑客马拉松（hackathon）中建一个小工具，但是维护一个项目比建立一个项目要困难得多。开源项目维护者不仅仅需要写代码，更多时候还需要：</p>
+<ul>
+<li>写项目文档；</li>
+<li>检查 Pull Request；</li>
+<li>看看大家提的 Issue；</li>
+<li>为项目增加新功能；</li>
+<li>在 Stack Overflow 等平台回答关于本项目的问题；</li>
+<li>在 QQ、微信等用户群里和用户讨论，回答问题。</li>
+</ul>
+<p>一个开源项目维护者必须一年到头无偿地做这么多复杂繁琐的工作。</p>
+<h2 id="当我们很方便的使用开源项目时，太容易忘记项目维护者的辛苦付出了"><a href="#当我们很方便的使用开源项目时，太容易忘记项目维护者的辛苦付出了" class="headerlink" title="当我们很方便的使用开源项目时，太容易忘记项目维护者的辛苦付出了"></a>当我们很方便的使用开源项目时，太容易忘记项目维护者的辛苦付出了</h2><p>我们如何使用一个开源项目：</p>
+<ol>
+<li>我们在网上搜索遇到的问题的解决方案；</li>
+<li>在一些博客和其他网站上进行搜索；</li>
+<li>我们点击这个开源项目的链接，读项目的 README。安装并进行测试。哈哈哈，问题解决了！</li>
+<li>我们转而看向了遇到的下一个问题。</li>
+</ol>
+<p>开源项目就像水和空气一样，人们只是享受它带来的好处并且习以为常。我们不会对空气或水说感谢，因为我们不知道那是谁造的。但是我们知道是谁创建了这些非常棒的开源项目。但是我们知道这么棒的开源项目是谁维护的啊。</p>
+<h2 id="项目维护者们并不在意这些"><a href="#项目维护者们并不在意这些" class="headerlink" title="项目维护者们并不在意这些"></a>项目维护者们并不在意这些</h2><blockquote>
+<p>开源项目使用者可能会想：</p>
+<p>“他们不需要这些，他们需要的是 pull request 和能够修复 bug 等实质性工作。”</p>
+<p>“我想他们更喜欢收到捐款。”</p>
+</blockquote>
+<p>但是他们真的很在意，<a href="https://news.ycombinator.com/item?id=15623604" target="_blank" rel="noopener">有时候，开源项目维护者真的需要你对他说一声谢谢</a>。当然，如果你能为项目捐款再好不过了，但是我知道的大多数开源项目维护者目的并不是赚钱。他们最终可能赚了钱，但与开发项目的动机相比，顶多算是一个副产品。我注意到，开源项目常常比非开源项目要好。因为最出色的开发者是出于激情和利他主义来开发产品的。如果你没能力或者不想捐钱，你可以给他们写句感谢的话。</p>
+<h2 id="我们真的太“忙”了"><a href="#我们真的太“忙”了" class="headerlink" title="我们真的太“忙”了"></a>我们真的太“忙”了</h2><blockquote>
+<p>“我们正在用双手改变世界。”</p>
+<p>“我的项目必须在一周内启动。”</p>
+<p>“我们每天都有数百封邮件需要回复。”</p>
+<p>“我们只是没有时间。”</p>
+</blockquote>
+<p>这些开源项目有更大的潜力去改变世界；或许其中的哪个项目已经改变了世界。</p>
+<blockquote>
+<p>Github 在 Ruby 上使用 Rails<br>Instagram 使用 django<br>我们很多服务器都在运行着 Linux</p>
+</blockquote>
+<p>可能没有这些开源项目就没有我们现在的这些项目。</p>
+<p>十分钟，你可能做不了什么大事。现在社交媒体让我们养成了一种习惯，就是更愿意点击一个 upvote 或者类似的按钮，而不是花十分钟来写一封感谢信。尽管一个好的开源项目可能节省了不仅仅十分钟的时间。我在 ProductHunt 上公开 <a href="https://www.thankyouopensource.com" target="_blank" rel="noopener">www.thankyouopensource.com</a> 这个网站后，很多用户抱怨最低 300 个字符的限制条件。我设置这个条件是想避免像下面这样简单的话：</p>
+<blockquote>
+<p>“谢谢，你们太棒了。”</p>
+<p>“非常感谢。”</p>
+<p>“我很喜欢你的开源项目。”</p>
+</blockquote>
+<p>我就得这些用户太“忙”了，没空写一封感谢信。但是这对我来说看起来像没有意义的垃圾邮件，我认为读这些就是在浪费时间。我们希望看到的感谢信是处于自愿的而不是义务的。这之间的不同对我们来说显而易见。我们希望维护者们知道我们为什么感谢他们的付出，他们的项目怎么帮助了我们，我们这些发自内心的感谢也是维护者们继续付出的强大动力之一。最重要的是，我们欢迎所有对维护项目感兴趣的人的加入，因为这确实是一件很棒的工作。一旦你成为了维护者，你会在感谢心中看到很多人对你付出的真诚的感谢。我建议在 GitHub 上加一个 <strong>感谢</strong> 的标签，不仅仅是感谢和激励维护者，更是邀请更多的人加入到其中。</p>
+<h2 id="最后的一点想法"><a href="#最后的一点想法" class="headerlink" title="最后的一点想法"></a>最后的一点想法</h2><p>开源项目维护者是我们交朋友的好选择，也是公司雇佣员工时的明智之选。他们有激情，愿意分享，能够坚持。他们是真正的 MVP，他们应该得到真诚的感谢。</p>
+<h2 id="什么是-Thank-you-open-source-🎉"><a href="#什么是-Thank-you-open-source-🎉" class="headerlink" title="什么是 Thank you, open source 🎉"></a>什么是 <a href="https://www.thankyouopensource.com" target="_blank" rel="noopener">Thank you, open source</a> 🎉</h2><p>这是一个非官方的，为大家向开源项目作者和维护者表达感谢的平台。同时它还为项目维护者们宣传其他项目提供了一个平台 🤙 </p>
+<hr>
+<blockquote>
+<ul>
+<li>原文地址：<a href="https://www.codementor.io/windsonyang/why-we-never-thank-open-source-maintainers-ed0nsw3zd" target="_blank" rel="noopener">Why we never thank open source maintainers</a></li>
+<li>原文作者：<a href="https://www.codementor.io/windsonyang" target="_blank" rel="noopener">Windson Yang</a></li>
+<li>译文出自：<a href="https://github.com/xitu/gold-miner" target="_blank" rel="noopener">掘金翻译计划</a></li>
+<li>译者：<a href="https://leviding.com" target="_blank" rel="noopener">LeviDing</a></li>
+</ul>
+</blockquote>
+</div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>LeviDing</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="/article/why-we-never-thank-open-source-maintainers/">https://www.dingxuewen.com/article/why-we-never-thank-open-source-maintainers/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li></ul></div><br><div class="tags"><a href="/tags/译文/">译文</a><a href="/tags/开源/">开源</a></div><div class="post-nav"><a class="pre" href="/article/i-understand-the-truth-just-lazy/">道理我都懂，只是懒？—《认知突围》</a><a class="next" href="/article/how-to-let-wechat-wear-christmas-hat-words-for-me/">让微信为你戴上圣诞帽的正确姿势</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'https://www.dingxuewen.com/article/why-we-never-thank-open-source-maintainers/';
+    this.page.identifier = 'article/why-we-never-thank-open-source-maintainers/';
+    this.page.title = '译文：为什么我们从来不去感谢开源项目维护者';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//dingxuewen.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//dingxuewen.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://dingxuewen.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://www.dingxuewen.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-tasks"> 开源项目</i></div><ul></ul><a href="https://leviding.github.io/technical-talk" title="最新技术知识和趣闻" target="_blank">最新技术知识和趣闻</a><ul></ul><a href="https://zh.javascript.info" title="现代 JavaScript 教程" target="_blank">现代 JavaScript 教程</a><ul></ul><a href="https://leviding.github.io/leetcode-js-leviding" title="LeetCode JavaScript 题解" target="_blank">LeetCode JavaScript 题解</a></div><div class="widget"><div class="widget-title"><i class="fa fa-folder"> 文章分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端技术/">前端技术</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基础知识/">基础知识</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发总结/">开发总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思考总结/">思考总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/文章翻译/">文章翻译</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/有趣好玩/">有趣好玩</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活随想/">生活随想</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/项目实战/">项目实战</a><span class="category-list-count">4</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-tags"> 内容标签</i></div><div class="tagcloud"><a href="/tags/成长/" style="font-size: 15px;">成长</a> <a href="/tags/工作/" style="font-size: 15px;">工作</a> <a href="/tags/思考/" style="font-size: 15px;">思考</a> <a href="/tags/总结/" style="font-size: 15px;">总结</a> <a href="/tags/年度总结/" style="font-size: 15px;">年度总结</a> <a href="/tags/译文/" style="font-size: 15px;">译文</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next/" style="font-size: 15px;">Next</a> <a href="/tags/Site/" style="font-size: 15px;">Site</a> <a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/多抓鱼/" style="font-size: 15px;">多抓鱼</a> <a href="/tags/文案/" style="font-size: 15px;">文案</a> <a href="/tags/管理/" style="font-size: 15px;">管理</a> <a href="/tags/营销/" style="font-size: 15px;">营销</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/Grid/" style="font-size: 15px;">Grid</a> <a href="/tags/微信读书/" style="font-size: 15px;">微信读书</a> <a href="/tags/运营/" style="font-size: 15px;">运营</a> <a href="/tags/市场/" style="font-size: 15px;">市场</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/热点/" style="font-size: 15px;">热点</a> <a href="/tags/工作技巧/" style="font-size: 15px;">工作技巧</a> <a href="/tags/PPT/" style="font-size: 15px;">PPT</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a> <a href="/tags/Sass/" style="font-size: 15px;">Sass</a> <a href="/tags/Scss/" style="font-size: 15px;">Scss</a> <a href="/tags/Less/" style="font-size: 15px;">Less</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Chrome/" style="font-size: 15px;">Chrome</a> <a href="/tags/随想/" style="font-size: 15px;">随想</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Gradle/" style="font-size: 15px;">Gradle</a> <a href="/tags/小米/" style="font-size: 15px;">小米</a> <a href="/tags/面试/" style="font-size: 15px;">面试</a> <a href="/tags/心理学/" style="font-size: 15px;">心理学</a> <a href="/tags/Sublime/" style="font-size: 15px;">Sublime</a> <a href="/tags/工具/" style="font-size: 15px;">工具</a> <a href="/tags/开源/" style="font-size: 15px;">开源</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/article/string-and-arr-methods/">字符串和数组常用方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/resigned-from-alibaba-cloud/">我从阿里云离职了，下一站，广州</a></li><li class="post-list-item"><a class="post-list-link" href="/article/about-git-add/">git add .，git add -A，git add -u，git add * 的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/2020-annual-summary/">学文同学的 2020 年度总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-lifecycle-version-16-4/">我对 React V16.4 生命周期的理解</a></li><li class="post-list-item"><a class="post-list-link" href="/article/introduction-to-css-preprocessor/">初谈 CSS 预处理器</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-in-my-mind-jsx-virtual-dom-diff-setstate/">React 之我见：JSX，虚拟 DOM，Diff 算法，setState，state 和 props 梳理</a></li><li class="post-list-item"><a class="post-list-link" href="/article/iterable-iterator-and-generator-of-javascript/">Iterable，Iterator，Generator 三者的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/how-to-quickly-attract-judges-in-a-5-minute-ppt-report/">如何在 5 分钟 PPT 汇报中迅速抓住评委眼球</a></li><li class="post-list-item"><a class="post-list-link" href="/article/do-you-really-know-how-to-write-a-good-copy/">你真的知道怎么写文案吗 —《文案训练手册》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//dingxuewen.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-list"> 社交账号</i></div><ul></ul><a href="https://leviding.com" title="LeviDing.com" target="_blank">LeviDing.com</a><ul></ul><a href="https://github.com/leviding" title="我的「GitHub」" target="_blank">我的「GitHub」</a><ul></ul><a href="https://juejin.im/user/589881b7128fe1006cbbacec/posts" title="我的「掘金」主页" target="_blank">我的「掘金」主页</a><ul></ul><a href="https://www.zhihu.com/people/leviding" title="我的「知乎」主页" target="_blank">我的「知乎」主页</a><ul></ul><a href="https://weibo.com/leviding" title="我的「微博」主页" target="_blank">我的「微博」主页</a><ul></ul><a href="https://www.douban.com/people/dingxuewen/" title="我的「豆瓣」主页" target="_blank">我的「豆瓣」主页</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017-2023 LeviDing.</div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /about/
+Allow: /archives/
+Allow: /article/
+Allow: /categories/
+Allow: /tags/
+Allow: /resources/
+Disallow: /assets/
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/
+
+Sitemap: https://dingxuewen.com/sitemap.xml
+Sitemap: https://dingxuewen.com/baidusitemap.xml

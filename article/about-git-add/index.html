@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="LeviDing's Blog，丁学文的博客。95 后，男生。果粉，不抽烟，有很多奇怪的想法，活跃在知乎和掘金，单身。"><title>git add .，git add -A，git add -u，git add * 的区别与联系 | LeviDing 的博客</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-92630037-1','auto');ga('send','pageview');
+</script></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">git add .，git add -A，git add -u，git add * 的区别与联系</h1><a id="logo" href="/.">LeviDing 的博客</a><p class="description">心之所向，身之所往！</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/history/"><i class="fa fa-history"> 过往</i></a><a href="/guestbook/"><i class="fa fa-comment"> 留言</i></a><a href="/atom.xml" target="_blank"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">git add .，git add -A，git add -u，git add * 的区别与联系</h1><div class="post-meta">Jan 16, 2022<span> | </span><span class="category"><a href="/categories/开发总结/">开发总结</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.1k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><a class="disqus-comment-count" data-disqus-identifier="article/about-git-add/" href="/article/about-git-add/#disqus_thread"></a><div class="post-content"><p>Git 的使用：归纳整理一些 git 使用的细节</p>
+<a id="more"></a>
+
+<blockquote>
+<p>注意：这几个命令在不同版本的 Git 中稍有差异。</p>
+</blockquote>
+<h3 id="对于-Git-Version-1-x："><a href="#对于-Git-Version-1-x：" class="headerlink" title="对于 Git Version 1.x："></a>对于 Git Version 1.x：</h3><ol>
+<li><code>git add .</code>：会将当前工作区中当前目录(包括子目录)下的所有新文件和对已有文件的改动提交至暂存区，但不包括被删除的文件。</li>
+<li><code>git add -u</code>：<code>git add --update</code> 的简写形式，它只会监控当前整个工作区中之前已被 <code>add</code> 的文件，即已被跟踪(tracked)的文件，也就是只会将当前整个工作区中被修改和被删除的文件提交至暂存区。而新文件因为未被跟踪(untracked)，所以不会被提交至暂存区。</li>
+<li><code>git add -A</code>：<code>git add --all</code> 的简写形式，它会将当前整个工作区中所有的文件改动提交至暂存区，包括新增、修改和被删除的文件，不受当前所在目录限制。</li>
+</ol>
+<p>注意：你会看到有些文章说 <code>git add -A</code> 属于 <code>git add .</code> 和 <code>git add -u</code> 功能的合集，这是不对的。因为 <code>git add .</code> 只会提交当前目录(包括子目录)下的新文件和对已有文件的改动，而 <code>git add -A</code> 不受当前目录限制。也就是说，<code>git add .</code> 和 <code>git add -u</code> 功能的合集只能属于 <code>git add -A</code> 功能的子集。</p>
+<p><strong>总结详见下图：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Git Version 1.x</th>
+<th align="center">新文件</th>
+<th align="center">被修改的文件</th>
+<th align="center">被删除的文件</th>
+<th>是否受当前所在目录限制</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">git add -A.</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td>❌</td>
+<td>将当前整个工作区中所有的文件改动提交至暂存区，包括新增、修改和被删除的文件，不受当前所在目录限制</td>
+</tr>
+<tr>
+<td align="left">git add .</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">❌</td>
+<td>✅</td>
+<td>将当前工作区中当前目录(包括子目录)下的所有新文件和对已有文件的改动提交至暂存区，但不包括被删除的文件</td>
+</tr>
+<tr>
+<td align="left">git add -u.</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td>❌</td>
+<td>将当前整个工作区中被修改和被删除的文件提交至暂存区。而新文件因为未被跟踪(untracked)，所以不会被提交至暂存区</td>
+</tr>
+</tbody></table>
+<h3 id="对于-Git-Version-2-x："><a href="#对于-Git-Version-2-x：" class="headerlink" title="对于 Git Version 2.x："></a>对于 Git Version 2.x：</h3><p>在 Git –version 2.x 中对 <code>git add .</code> 的功能做了改动，<code>git add .</code> 会提交当前工作区中当前目录(包括子目录)下所有的文件改动，不像在 Git –version 1.x 时那样不包括被删除的文件。</p>
+<p>Git Version 2.x 中如果想在使用 <code>git add .</code> 时不提交被删除的文件，可以使用 <code>git add --ignore-removal</code> 加上匹配符 <code>.</code>，即 <code>git add --ignore-removal .</code>。</p>
+<p><code>git add --ignore-removal</code> 后的匹配符是可以更换的(但不能缺省)，例如 <code>git add --ignore-removal -A</code> 可以实现在 <code>git add -A</code> 时不提交被删除的文件。</p>
+<p>有些文章说在 Git –version 2.x 中 <code>git add .</code> 和 <code>git add -A</code> 的功能变得完全相同，这是不对的。因为我们之前提到过，<code>git add .</code> 提交的文件改动受当前所在目录限制，它只会提交当前工作区中当前目录(包括子目录)下的文件改动，而 <code>git add -A</code> 不受当前所在目录的限制，提交的是当前整个工作区中所有的文件改动。</p>
+<h4 id="git-add"><a href="#git-add" class="headerlink" title="git add *"></a>git add *</h4><p><code>git add *</code> 表示添加当前目录(包括子目录)下的所有文件改动，但不包括文件名以 <code>.</code> 符号开头的文件的改动。这是 Shell 命令，git 只是接收文件列表。而 <code>git add .</code> 的功能与 <code>git add *</code> 基本相同，只是 <code>git add .</code> 会将文件名以 <code>.</code> 符号开头的文件的改动也提交至暂存区。</p>
+<p><strong>总结详见下图：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Git Version 2.x</th>
+<th align="center">新文件</th>
+<th align="center">被修改的文件</th>
+<th align="center">被删除的文件</th>
+<th>是否受当前所在目录限制</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">git add -A</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td>❌</td>
+<td>将当前整个工作区中所有的文件改动提交至暂存区，包括新增、修改和被删除的文件，不受当前所在目录限制</td>
+</tr>
+<tr>
+<td align="left">git add .</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td align="center">❌</td>
+<td>✅</td>
+<td>将当前工作区中当前目录(包括子目录)下的所有的文件改动提交至暂存区，包括新增、修改和被删除的文件</td>
+</tr>
+<tr>
+<td align="left">git add -u.</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td>❌</td>
+<td>将当前整个工作区中被修改和被删除的文件提交至暂存区。而新文件因为未被跟踪(untracked)，所以不会被提交至暂存区</td>
+</tr>
+<tr>
+<td align="left">git add *</td>
+<td align="center">❌</td>
+<td align="center">✅</td>
+<td align="center">✅</td>
+<td>✅</td>
+<td>将当前工作区中当前目录(包括子目录)下的所有的文件改动提交至暂存区，包括新增、修改和被删除的文件，但不包括文件名以 <code>.</code> 符号开头的文件的改动</td>
+</tr>
+</tbody></table>
+</div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>本文作者：</strong>LeviDing</li><li class="post-copyright-link"><strong>本文链接：</strong><a href="/article/about-git-add/">https://www.dingxuewen.com/article/about-git-add/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li></ul></div><br><div class="tags"><a href="/tags/Git/">Git</a></div><div class="post-nav"><a class="pre" href="/article/resigned-from-alibaba-cloud/">我从阿里云离职了，下一站，广州</a><a class="next" href="/article/2020-annual-summary/">学文同学的 2020 年度总结</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'https://www.dingxuewen.com/article/about-git-add/';
+    this.page.identifier = 'article/about-git-add/';
+    this.page.title = 'git add .，git add -A，git add -u，git add * 的区别与联系';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//dingxuewen.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//dingxuewen.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://dingxuewen.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"><input type="hidden" name="sitesearch" value="https://www.dingxuewen.com"></form></div><div class="widget"><div class="widget-title"><i class="fa fa-tasks"> 开源项目</i></div><ul></ul><a href="https://leviding.github.io/technical-talk" title="最新技术知识和趣闻" target="_blank">最新技术知识和趣闻</a><ul></ul><a href="https://zh.javascript.info" title="现代 JavaScript 教程" target="_blank">现代 JavaScript 教程</a><ul></ul><a href="https://leviding.github.io/leetcode-js-leviding" title="LeetCode JavaScript 题解" target="_blank">LeetCode JavaScript 题解</a></div><div class="widget"><div class="widget-title"><i class="fa fa-folder"> 文章分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端技术/">前端技术</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基础知识/">基础知识</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发总结/">开发总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/思考总结/">思考总结</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/文章翻译/">文章翻译</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/有趣好玩/">有趣好玩</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活随想/">生活随想</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/项目实战/">项目实战</a><span class="category-list-count">4</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-tags"> 内容标签</i></div><div class="tagcloud"><a href="/tags/成长/" style="font-size: 15px;">成长</a> <a href="/tags/工作/" style="font-size: 15px;">工作</a> <a href="/tags/思考/" style="font-size: 15px;">思考</a> <a href="/tags/总结/" style="font-size: 15px;">总结</a> <a href="/tags/年度总结/" style="font-size: 15px;">年度总结</a> <a href="/tags/译文/" style="font-size: 15px;">译文</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Next/" style="font-size: 15px;">Next</a> <a href="/tags/Site/" style="font-size: 15px;">Site</a> <a href="/tags/Git/" style="font-size: 15px;">Git</a> <a href="/tags/多抓鱼/" style="font-size: 15px;">多抓鱼</a> <a href="/tags/文案/" style="font-size: 15px;">文案</a> <a href="/tags/管理/" style="font-size: 15px;">管理</a> <a href="/tags/营销/" style="font-size: 15px;">营销</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/Grid/" style="font-size: 15px;">Grid</a> <a href="/tags/微信读书/" style="font-size: 15px;">微信读书</a> <a href="/tags/运营/" style="font-size: 15px;">运营</a> <a href="/tags/市场/" style="font-size: 15px;">市场</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/热点/" style="font-size: 15px;">热点</a> <a href="/tags/工作技巧/" style="font-size: 15px;">工作技巧</a> <a href="/tags/PPT/" style="font-size: 15px;">PPT</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a> <a href="/tags/Sass/" style="font-size: 15px;">Sass</a> <a href="/tags/Scss/" style="font-size: 15px;">Scss</a> <a href="/tags/Less/" style="font-size: 15px;">Less</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Chrome/" style="font-size: 15px;">Chrome</a> <a href="/tags/随想/" style="font-size: 15px;">随想</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/Android/" style="font-size: 15px;">Android</a> <a href="/tags/Gradle/" style="font-size: 15px;">Gradle</a> <a href="/tags/小米/" style="font-size: 15px;">小米</a> <a href="/tags/面试/" style="font-size: 15px;">面试</a> <a href="/tags/心理学/" style="font-size: 15px;">心理学</a> <a href="/tags/Sublime/" style="font-size: 15px;">Sublime</a> <a href="/tags/工具/" style="font-size: 15px;">工具</a> <a href="/tags/开源/" style="font-size: 15px;">开源</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/article/string-and-arr-methods/">字符串和数组常用方法总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/resigned-from-alibaba-cloud/">我从阿里云离职了，下一站，广州</a></li><li class="post-list-item"><a class="post-list-link" href="/article/about-git-add/">git add .，git add -A，git add -u，git add * 的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/2020-annual-summary/">学文同学的 2020 年度总结</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-lifecycle-version-16-4/">我对 React V16.4 生命周期的理解</a></li><li class="post-list-item"><a class="post-list-link" href="/article/introduction-to-css-preprocessor/">初谈 CSS 预处理器</a></li><li class="post-list-item"><a class="post-list-link" href="/article/react-in-my-mind-jsx-virtual-dom-diff-setstate/">React 之我见：JSX，虚拟 DOM，Diff 算法，setState，state 和 props 梳理</a></li><li class="post-list-item"><a class="post-list-link" href="/article/iterable-iterator-and-generator-of-javascript/">Iterable，Iterator，Generator 三者的区别与联系</a></li><li class="post-list-item"><a class="post-list-link" href="/article/how-to-quickly-attract-judges-in-a-5-minute-ppt-report/">如何在 5 分钟 PPT 汇报中迅速抓住评委眼球</a></li><li class="post-list-item"><a class="post-list-link" href="/article/do-you-really-know-how-to-write-a-good-copy/">你真的知道怎么写文案吗 —《文案训练手册》</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//dingxuewen.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-list"> 社交账号</i></div><ul></ul><a href="https://leviding.com" title="LeviDing.com" target="_blank">LeviDing.com</a><ul></ul><a href="https://github.com/leviding" title="我的「GitHub」" target="_blank">我的「GitHub」</a><ul></ul><a href="https://juejin.im/user/589881b7128fe1006cbbacec/posts" title="我的「掘金」主页" target="_blank">我的「掘金」主页</a><ul></ul><a href="https://www.zhihu.com/people/leviding" title="我的「知乎」主页" target="_blank">我的「知乎」主页</a><ul></ul><a href="https://weibo.com/leviding" title="我的「微博」主页" target="_blank">我的「微博」主页</a><ul></ul><a href="https://www.douban.com/people/dingxuewen/" title="我的「豆瓣」主页" target="_blank">我的「豆瓣」主页</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017-2023 LeviDing.</div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
